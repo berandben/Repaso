@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">        
+        <style>
+            h3{                
+                text-align: center;
+            }
+            table{                
+                width: 100%;
+            }
+            table, th, td{              
+                border: solid 1px;
+                text-align: center;
+            }
+            thead{
+                color: red;
+            }
+            tbody{                
+                color: green;
+            }
+            tfoot{                
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Etiquetas html tablas</h3>
+        <table >
+            <thead>
+            <tr><th rowspan="2">Etiqueta</th><th colspan="2">Etiquetas Html para tablas</th></tr>
+            <tr><th colspan="2">Utilidad</th></tr>
+            </thead>
+            <tbody>
+            <tr><td>table</td><td colspan="2">Encierra toda la tabla</td>
+            <tr><td>thead</td><td colspan="2">Agrupa los tr de cabecera</td>
+            <tr><td>tbody</td><td colspan="2">Agrupa los tr del contenido</td>  
+            <tr><td>tfoot</td><td colspan="2">Agrupa los tr del pie</td> 
+            <tr><td>tr</td><td colspan="2">Crea una nueva fila</td>
+            <tr><td>th</td><td>Dato principal</td><td>Columna dentro de una fila tr</td>   
+            <tr><td>td</td><td>Dato de contenido</td><td>Columna dentro de una fila tr</td> 
+            <tr><td>rowspan="n"</td><td colspan="2">Ocupa n filas</td></tr>
+            <tr><td>colspan="n"</td><td colspan="2">Ocupa n columnas</td></tr>
+            </tbody>
+            <tfoot>
+                <tr><th colspan="3">Última fila</th></tr>
+            </tfoot>
+        </table>
+
+
+
+
+        <h3>Tabla de calificaciones</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Alumnos</th><td colspan="4">Curso 2019-2020</td>
+                </tr>
+                <tr>
+                    <td>Trimestre 1</td><td>Trimestre 2</td><td>Trimestre 3</td><td>Calificación</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Pepito</th><td>6</td><td>5</td><td>4</td><td>10</td>
+                </tr>
+                <tr>
+                    <th>Menganito</th><td>3</td><td>4</td><td>1</td><td>5</td>
+                </tr>
+                <tr>
+                    <th>Periquito</th><td>4</td><td>3</td><td>4</td><td>5</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th rowspan="3">Nota Media</th><td>5.5</td><td>5.5</td><td>5.5</td><td>5.5</td>
+                </tr>
+                <tr>
+                    <td colspan="4">Media global</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><ol><li>primero</li><li>segundo</li></ol></td><td colspan="2"><ul><li>tercero</li><li>cuarto</li></ul></td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
