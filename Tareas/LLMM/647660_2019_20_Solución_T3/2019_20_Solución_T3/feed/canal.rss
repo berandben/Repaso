@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<!-- **************************** CANAL ********************************-->
+  <channel>
+    <!--Elementos obligatorios: title, link y description-->
+    <!--Elementos opcionales: language, copyright, managingEditor, webMaster, pubDate, lastBuildDate, category, generator, docs, cloud, ttl, image, textInput, skipHours, skipDays-->
+
+    <!-- Elementos obligatorios -->
+    <title>Canal informativo del Salón del Automóvil de Frankfurt</title>
+    <link>http://www.feriaautomocion.com</link>
+    <description>En este canal tendrás toda la información sobre el Salón del Automóvil de Frankfurt</description>
+    <!-- Elementos opcionales -->
+    <language>es</language>
+    <pubDate>Mon, 14 May 2018 17:32:06 GMT</pubDate>
+    <managingEditor>jurgen@feriaautomocion.com (Jurgen 
+      Schwarz) </managingEditor>
+    <copyright>Creative Common</copyright>
+
+    <!--************************* NOTICIAS *******************************-->
+    <!-- 1º Noticia -->
+    <item>
+      <!--Elementos obligatorios: title o description-->
+      <!--Elementos opcionales: title o descripcion, link, author, category, ,comments, enclosure, guid, pubDate, source, -->
+      <title>El tiempo en Frankfurt</title>
+      <description>Tiempo previsto en Frankfurt.</description>
+      <link>https://www.eltiempo.es/francfort.html?q=francfort</link>
+      <guid>http://www.eltiempo.es/francfort</guid>
+    </item>
+
+    <!-- 2º y 3º Noticia -->
+    <item>
+      <title>Noticias sobre la ciudad de Frankfurt</title>
+      <description>Noticias de los periodicos locales de Frankfurt.</description>
+      <link>https://www.faz.net/aktuell</link>
+      <pubDate>Sun, 6 May 2018 12:24:26 GMT</pubDate>
+    </item>
+
+    <item>
+      <description>Otro periodico local de Frankfurt.</description>
+      <link>https://www.fr.de/</link>
+      <category>Noticias locales</category>
+    </item>
+
+    <!-- 4º y 5º Noticia -->
+    <item>
+      <title>Noticias sobre vehículos eléctricos</title>
+      <link>https://www.hibridosyelectricos.com</link>
+      <author>jose@hibridosyelectricos.com (José López)</author>
+    </item>
+
+    <item>
+      <title>Otras noticias sobre vehículos eléctricos</title>
+      <description>Otro blog de noticias sobre vehículos eléctricos.</description>
+      <link>https://movilidadelectrica.com/</link>
+      <guid>http://movilidadelectrica.com/francfort</guid>
+    </item>
+
+  </channel>
+</rss>

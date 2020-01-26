@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!DOCTYPE salon_automovil>
+<salon_automovil>
+	<nombre>Salon del Automóvil de Frankfurt</nombre>
+	<edicion tipo="Número">68</edicion>
+	<fechas>
+		<fecha tipo="Inicio">12/09/2019</fecha>
+		<fecha tipo="Fin">22/09/2019</fecha>
+	</fechas>
+	<lugar>Centro de exposiciones Messe Frankfurt</lugar>
+	<correos_electronicos>
+		<correo uso="General">iaa@vda.de</correo>
+		<correo uso="Prensa">press@vda.de</correo>
+	</correos_electronicos>
+	<precio_entradas><!-- El precio de las entradas es valido para un solo dia-->
+		<entrada tipo="Individual" moneda="Euros">15</entrada>
+		<entrada tipo="Reducida" moneda="Euros">8.50</entrada>
+		<entrada tipo="Familiar" moneda="Euros">30</entrada>
+	</precio_entradas>
+	<transportes>
+		<transporte tipo="Bus">Flixbus</transporte>
+		<transporte tipo="Tren">Flixtrain</transporte>
+	</transportes>
+	<categorias>
+		<categoria>
+			<nombre cod="TUR">Turismo</nombre>
+			<subcategoria>
+				<nombre cod="SED">Berlina</nombre>
+				<vehiculos>
+					<vehiculo>
+						<marca>Ford</marca>
+						<modelo>Mustang Fastback</modelo>
+						<anyo>2015</anyo>
+						<puertas>3</puertas>
+						<plazas>4</plazas>
+						<capacidad_maletero unidad="Litros">408</capacidad_maletero>
+						<potencia unidad="CV">314</potencia>
+						<autonomia unidad="Km">300</autonomia>
+						<precio moneda="Euros">43350</precio>
+						<valoracion>3</valoracion><!-- El rango tendrá un intervalo del 1 al 5-->
+					</vehiculo>
+					<vehiculo>
+						<marca>Tesla</marca>
+						<modelo>Model 3 Performance</modelo>
+						<anyo>2019</anyo>
+						<puertas>5</puertas>
+						<plazas>5</plazas>
+						<capacidad_maletero unidad="Litros">450</capacidad_maletero>
+						<potencia unidad="CV">534</potencia>
+						<autonomia unidad="Km">503</autonomia>
+						<precio moneda="Euros">75350</precio>
+						<valoracion>5</valoracion><!-- El rango tendrá un intervalo del 1 al 5-->
+					</vehiculo>
+				</vehiculos>
+			</subcategoria>
+			<subcategoria>
+				<nombre cod="CRO">Crossover</nombre>
+				<vehiculos/>
+			</subcategoria>
+			<subcategoria>
+				<nombre cod="SUV">SUV</nombre>
+				<vehiculos>
+					<vehiculo>
+						<marca>KIA</marca>
+						<modelo>KONA</modelo>
+						<anyo/>
+						<puertas>5</puertas>
+						<plazas>4</plazas>
+						<capacidad_maletero unidad="Litros">458</capacidad_maletero>
+						<potencia unidad="CV">314</potencia>
+						<autonomia unidad="Km">350</autonomia>
+						<precio/>
+						<valoracion>3</valoracion><!-- El rango tendrá un intervalo del 1 al 5-->
+					</vehiculo>
+				</vehiculos>
+			</subcategoria>
+			<subcategoria>
+				<nombre cod="COU">Coupé</nombre>
+				<vehiculos/>
+			</subcategoria>
+			<subcategoria>
+				<nombre cod="TTR">Todoterreno</nombre>
+				<vehiculos/>
+			</subcategoria>
+			<subcategoria>
+				<nombre cod="MON">Monovolumen</nombre>
+				<vehiculos/>
+			</subcategoria>
+			<subcategoria>
+				<nombre cod="DES">Descapotable</nombre>
+				<vehiculos/>
+			</subcategoria>
+		</categoria>
+	</categorias>
+	<categorias>
+		<categoria>
+			<nombre cod="COM">Comercial</nombre>
+			<subcategoria>
+				<nombre cod="HAT">Hatchback</nombre>
+				<vehiculos/>
+			</subcategoria>
+			<subcategoria>
+				<nombre cod="TOU">Tourer</nombre>
+				<vehiculos/>
+			</subcategoria>
+			<subcategoria>
+				<nombre cod="PIC">Pickup</nombre>
+				<vehiculos/>
+			</subcategoria>
+		</categoria>
+	</categorias>	
+	<bitacora><!--Categorizar y detallar todas las novedades que se produzcan.-->
+		<novedad id="01">
+			<titulo>Elon Musk acude al acto de inauguración</titulo>
+			<fecha>12/09/2019</fecha>
+			<descripcion>El escéntrico CEO de Tesla, acude al acto de inauguración con una camiseta del cristal roto de la presentación del 	
+			CyberTruck</descripcion>
+		</novedad>
+	</bitacora>
+</salon_automovil>
