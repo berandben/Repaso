@@ -119,6 +119,7 @@ public class Bombo {
         System.out.printf("Numero de bolas con toString %s%n", bombo1.toString());
         Scanner sc;
 
+//        Bombo bombo2 = null;
         try {
             sc = new Scanner(System.in);
             System.out.println("Introduzca el número de bolas (9-90): ");
@@ -151,6 +152,9 @@ public class Bombo {
             System.out.println("Dato erróneo");
         }
 
+//        if (bombo2 != null) {
+//            System.out.printf("Numero de bolas con toString %s%n", bombo2.toString());
+//        }
     }
 
 }
