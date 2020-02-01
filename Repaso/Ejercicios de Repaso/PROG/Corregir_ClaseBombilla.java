@@ -11,7 +11,7 @@ public class Bombilla {
 
     private int estado;
 
-    private static int numeroVecesEncendida;
+    private static int numeroVecesEncendida; //NO STATIC
 
     public Bombilla(int estado) throws IllegalArgumentException {
 
