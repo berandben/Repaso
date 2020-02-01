@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class Baraja {
 
     private int tipo;
-    private static int numeroExtracciones;
+    private static int numeroExtracciones;  //SIN ESTATIC
 
     public enum Numero48 {
         UNO, DOS, TRES, CUATRO, CINCO, SEIS, SIETE, OCHO, NUEVE, SOTA, CABALLO, REY
