@@ -1,0 +1,16 @@
+https://riptutorial.com/es/java/example/496/matrices-multidimensionales-y-dentadas
+
+https://jarroba.com/busqueda-de-patrones-expresiones-regulares/
+
+https://dzone.com/articles/java-string-format-examples
+
+
+Y si queréis ver como va quedando vuestro array podeís verlo así:
+
+Para un array simple
+
+         System.out.println(Arrays.toString(miArray));
+
+Para un array multidimensional
+
+         System.out.println(Arrays.deepToString(miArrayMutidimensional));
