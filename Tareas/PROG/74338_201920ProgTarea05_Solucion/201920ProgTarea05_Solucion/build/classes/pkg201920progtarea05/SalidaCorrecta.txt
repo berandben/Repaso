@@ -1,0 +1,292 @@
++------------------------------------+
+| PRUEBAS DE LA CLASE CuentaBancaria |
++------------------------------------+
+Fecha de realización de las pruebas: 09/01/2020
+
+ATRIBUTOS ESTÁTICOS PÚBLICOS DE LA CLASE
+----------------------------------------
+MAX_DESCUBIERTO: -2000,00
+DEFAULT_MAX_DESCUBIERTO: 0,00
+MAX_SALDO: 50000000,00
+MIN_EMBARGO: 0,00
+MIN_EMBARGO: 100,00
+MIN_YEAR: 1900
+DEFAULT_SALDO: 0,00
+
+INFORME GLOBAL DE TODAS LAS CUENTAS
+-----------------------------------
+Saldo total entre todas las cuentas en este instante:  0,00
+Número de cuentas embargadas en este instante: 0
+Fecha de creación de la cuenta más moderna: null
+
+
+PRUEBAS DE CREACIÓN DE CUENTAS CON VALORES NO VÁLIDOS
+-----------------------------------------------------
+Creando cuenta con valores: -0,01   01/09/2019   0,00
+Error: Parámetros de creación de la cuenta inválidos. Saldo inicial: -0,01.
+Cuenta creada: null
+Creando cuenta con valores: 50000000,01   01/09/2019   0,00
+Error: Parámetros de creación de la cuenta inválidos. Saldo inicial: 50000000,01.
+Cuenta creada: null
+Creando cuenta con valores: -0,01   01/09/2019
+Error: Parámetros de creación de la cuenta inválidos. Saldo inicial: -0,01.
+Cuenta creada: null
+Creando cuenta con valores: 50000000,01   01/09/2019
+Error: Parámetros de creación de la cuenta inválidos. Saldo inicial: 50000000,01.
+Cuenta creada: null
+Creando cuenta con valores: 0,00   null   0,00
+Error: Parámetros de creación de la cuenta inválidos. Fecha de creación no válida: null.
+Cuenta creada: null
+Creando cuenta con valores: 0,00   31/12/1899   0,00
+Error: Parámetros de creación de la cuenta inválidos. Fecha de creación no válida: 31/12/1899.
+Cuenta creada: null
+Creando cuenta con valores: 0,00   01/09/2030   0,00
+Error: Parámetros de creación de la cuenta inválidos. Fecha de creación no válida: 01/09/2030.
+Cuenta creada: null
+Creando cuenta con valores: 0,00   null
+Error: Parámetros de creación de la cuenta inválidos. Fecha de creación no válida: null.
+Cuenta creada: null
+Creando cuenta con valores: 0,00   31/12/1899
+Error: Parámetros de creación de la cuenta inválidos. Fecha de creación no válida: 31/12/1899.
+Cuenta creada: null
+Creando cuenta con valores: 0,00   01/09/2030
+Error: Parámetros de creación de la cuenta inválidos. Fecha de creación no válida: 01/09/2030.
+Cuenta creada: null
+Creando cuenta con valores: 5000000,00   01/09/2019   -2000,01
+Error: Parámetros de creación de la cuenta inválidos. Máximo descubierto: -2000,01.
+Cuenta creada: null
+Creando cuenta con valores: 5000000,00   01/09/2019   0,01
+Error: Parámetros de creación de la cuenta inválidos. Máximo descubierto: 0,01.
+Cuenta creada: null
+
+PRUEBAS CON LA CUENTA C0
+------------------------
+Creando cuenta con valores: 50000000,00   01/01/1900   -2000,00
+Cuenta creada sin error.
+Cuenta creada: Id: 0 - Saldo: 50000000,00 - Embargada: no
+Ingresar -0,01 euros:           Error: cantidad de ingreso no válida: -0,01
+                                Id: 0 - Saldo: 50000000,00 - Embargada: no
+Ingresar 0,01 euros:            Error: saldo máximo superado con este ingreso: 50000000,01
+                                Id: 0 - Saldo: 50000000,00 - Embargada: no
+Extraer -0,01 euros:            Error: cantidad de extracción no válida: -0,01
+                                Id: 0 - Saldo: 50000000,00 - Embargada: no
+Extraer 0,00 euros:             Cantidad extraída sin error.
+                                Id: 0 - Saldo: 50000000,00 - Embargada: no
+Extraer 0,01 euros:             Cantidad extraída sin error.
+                                Id: 0 - Saldo: 49999999,99 - Embargada: no
+Ingresar 0,02 euros:            Error: saldo máximo superado con este ingreso: 50000000,01
+                                Id: 0 - Saldo: 49999999,99 - Embargada: no
+Ingresar 0,01 euros:            Cantidad ingresada sin error.
+                                Id: 0 - Saldo: 50000000,00 - Embargada: no
+Extraer 50000000,00 euros:      Cantidad extraída sin error.
+                                Id: 0 - Saldo:        0,00 - Embargada: no
+Extraer 1999,99 euros:          Cantidad extraída sin error.
+                                Id: 0 - Saldo:    -1999,99 - Embargada: no
+Extraer 0,02 euros:             Error: descubierto máximo superado con esta extracción: -2000,01
+                                Id: 0 - Saldo:    -1999,99 - Embargada: no
+Extraer 0,01 euros:             Cantidad extraída sin error.
+                                Id: 0 - Saldo:    -2000,00 - Embargada: no
+
+INFORME DE LA CUENTA C0
+-----------------------
+Id: 0
+Saldo: -2000,00 euros
+Fecha de creación: 01/01/1900
+Antigüedad: 43838 días
+Cuenta embargada: no
+Porcentaje de embargo: 0,00%
+Límite de descubierto: -2000,00
+Cuenta en descubierto: sí
+Ingresos acumulados: 50000000,01 euros
+Saldo máximo histórico: 50000000,00 euros
+
+
+INFORME GLOBAL DE TODAS LAS CUENTAS
+-----------------------------------
+Saldo total entre todas las cuentas en este instante: -2000,00
+Número de cuentas embargadas en este instante: 0
+Fecha de creación de la cuenta más moderna: 01/01/1900
+
+
+
+PRUEBAS CON LA CUENTA C1
+------------------------
+Creando cuenta con valores: 5000,00   01/09/2019
+Cuenta creada sin error.
+Cuenta creada: Id: 1 - Saldo:     5000,00 - Embargada: no
+Embargar -0,01%:                Error: Porcentaje de embargo no válido: -0,01%
+                                Id: 1 - Saldo:     5000,00 - Embargada: no
+Embargar 0,00%:                 Error: Porcentaje de embargo no válido: 0,00%
+                                Id: 1 - Saldo:     5000,00 - Embargada: no
+Embargar 100,01%:               Error: Porcentaje de embargo no válido: 100,01%
+                                Id: 1 - Saldo:     5000,00 - Embargada: no
+Embargar 25,00%:                Embargo aplicado sin error.
+                                Id: 1 - Saldo:     5000,00 - Embargada: sí  25,0%
+Embargar 50,00%:                Error: La cuenta ya está embargada
+                                Id: 1 - Saldo:     5000,00 - Embargada: sí  25,0%
+Desembargar                     Cuenta desembargada sin error.
+Desembargar                     La cuenta no estaba embargada.
+Embargar 50,00%:                Embargo aplicado sin error.
+                                Id: 1 - Saldo:     5000,00 - Embargada: sí  50,0%
+Ingresar 4000,00 euros:         Cantidad ingresada sin error.
+                                Id: 1 - Saldo:     7000,00 - Embargada: sí  50,0%
+Ingresar 1000,00 euros:         Cantidad ingresada sin error.
+                                Id: 1 - Saldo:     7500,00 - Embargada: sí  50,0%
+Transferir 0,50 de C1 a null:   Error: cuenta de destino no válida
+                                Id: 1 - Saldo:     7500,00 - Embargada: sí  50,0%
+Transferir -0,01 de C1 a C0:    Error: cantidad a transferir no válida: -0,01
+                                Id: 1 - Saldo:     7500,00 - Embargada: sí  50,0%
+                                Id: 0 - Saldo:    -2000,00 - Embargada: no
+Transferir 0,01 de C0 a C1:     Error: cantidad no disponible en cuenta origen: 0,01
+                                Id: 0 - Saldo:    -2000,00 - Embargada: no
+                                Id: 1 - Saldo:     7500,00 - Embargada: sí  50,0%
+Transferir 0,00 de C1 a C0:     Transferencia efectuada sin error.
+                                Id: 1 - Saldo:     7500,00 - Embargada: sí  50,0%
+                                Id: 0 - Saldo:    -2000,00 - Embargada: no
+Transferir 7000,00 de C1 a C0:  Transferencia efectuada sin error.
+                                Id: 1 - Saldo:      500,00 - Embargada: sí  50,0%
+                                Id: 0 - Saldo:     5000,00 - Embargada: no
+Transferir 500,01 de C1 a C0:   Error: cantidad no disponible en cuenta origen: 500,01
+                                Id: 1 - Saldo:      500,00 - Embargada: sí  50,0%
+                                Id: 0 - Saldo:     5000,00 - Embargada: no
+Transferir 500,00 de C1 a C0:   Transferencia efectuada sin error.
+                                Id: 1 - Saldo:        0,00 - Embargada: sí  50,0%
+                                Id: 0 - Saldo:     5500,00 - Embargada: no
+Transferir 7500,01 de C0 a C1:  Error: cantidad no disponible en cuenta origen: 7500,01
+                                Id: 0 - Saldo:     5500,00 - Embargada: no
+                                Id: 1 - Saldo:        0,00 - Embargada: sí  50,0%
+Transferir 7500,00 de C0 a C1:  Transferencia efectuada sin error.
+                                Id: 0 - Saldo:    -2000,00 - Embargada: no
+                                Id: 1 - Saldo:     3750,00 - Embargada: sí  50,0%
+
+INFORME DE LA CUENTA C0
+-----------------------
+Id: 0
+Saldo: -2000,00 euros
+Fecha de creación: 01/01/1900
+Antigüedad: 43838 días
+Cuenta embargada: no
+Porcentaje de embargo: 0,00%
+Límite de descubierto: -2000,00
+Cuenta en descubierto: sí
+Ingresos acumulados: 50007500,01 euros
+Saldo máximo histórico: 50000000,00 euros
+
+
+
+INFORME DE LA CUENTA C1
+-----------------------
+Id: 1
+Saldo: 3750,00 euros
+Fecha de creación: 01/09/2019
+Antigüedad: 131 días
+Cuenta embargada: sí
+Porcentaje de embargo: 50,00%
+Límite de descubierto: 0,00
+Cuenta en descubierto: no
+Ingresos acumulados: 11250,00 euros
+Saldo máximo histórico: 7500,00 euros
+
+
+INFORME GLOBAL DE TODAS LAS CUENTAS
+-----------------------------------
+Saldo total entre todas las cuentas en este instante: 1750,00
+Número de cuentas embargadas en este instante: 1
+Fecha de creación de la cuenta más moderna: 01/09/2019
+
+
+PRUEBAS CON LA CUENTA C2
+------------------------
+Creando cuenta con valores: 50000000,00
+Cuenta creada sin error.
+Cuenta creada: Id: 2 - Saldo: 50000000,00 - Embargada: no
+Transferir todo de C2 a null:   Error: cuenta de destino no válida
+                                Id: 2 - Saldo: 50000000,00 - Embargada: no
+Transferir todo de C2 a C0:     Transferencia efectuada sin error.
+                                Id: 2 - Saldo:        0,00 - Embargada: no
+                                Id: 0 - Saldo: 49998000,00 - Embargada: no
+
+INFORME DE LA CUENTA C0
+-----------------------
+Id: 0
+Saldo: 49998000,00 euros
+Fecha de creación: 01/01/1900
+Antigüedad: 43838 días
+Cuenta embargada: no
+Porcentaje de embargo: 0,00%
+Límite de descubierto: -2000,00
+Cuenta en descubierto: no
+Ingresos acumulados: 100007500,01 euros
+Saldo máximo histórico: 50000000,00 euros
+
+
+
+INFORME DE LA CUENTA C2
+-----------------------
+Id: 2
+Saldo: 0,00 euros
+Fecha de creación: 09/01/2020
+Antigüedad: 1 día
+Cuenta embargada: no
+Porcentaje de embargo: 0,00%
+Límite de descubierto: 0,00
+Cuenta en descubierto: no
+Ingresos acumulados: 50000000,00 euros
+Saldo máximo histórico: 50000000,00 euros
+
+
+INFORME GLOBAL DE TODAS LAS CUENTAS
+-----------------------------------
+Saldo total entre todas las cuentas en este instante: 50001750,00
+Número de cuentas embargadas en este instante: 1
+Fecha de creación de la cuenta más moderna: 09/01/2020
+
+
+PRUEBAS CON LA CUENTA C3
+------------------------
+Creando cuenta sin parámetros
+Cuenta creada sin error.
+Cuenta creada: Id: 3 - Saldo:        0,00 - Embargada: no
+Embargar 100,00%:               Embargo aplicado sin error.
+                                Id: 3 - Saldo:        0,00 - Embargada: sí 100,0%
+Transferir todo de C2 a C3:     Transferencia efectuada sin error.
+                                Id: 2 - Saldo:        0,00 - Embargada: no
+                                Id: 3 - Saldo:        0,00 - Embargada: sí 100,0%
+Transferir todo de C0 a C3:     Transferencia efectuada sin error.
+                                Id: 0 - Saldo:        0,00 - Embargada: no
+                                Id: 3 - Saldo:        0,00 - Embargada: sí 100,0%
+
+INFORME DE LA CUENTA C0
+-----------------------
+Id: 0
+Saldo: 0,00 euros
+Fecha de creación: 01/01/1900
+Antigüedad: 43838 días
+Cuenta embargada: no
+Porcentaje de embargo: 0,00%
+Límite de descubierto: -2000,00
+Cuenta en descubierto: no
+Ingresos acumulados: 100007500,01 euros
+Saldo máximo histórico: 50000000,00 euros
+
+
+
+INFORME DE LA CUENTA C3
+-----------------------
+Id: 3
+Saldo: 0,00 euros
+Fecha de creación: 09/01/2020
+Antigüedad: 1 día
+Cuenta embargada: sí
+Porcentaje de embargo: 100,00%
+Límite de descubierto: 0,00
+Cuenta en descubierto: no
+Ingresos acumulados: 0,00 euros
+Saldo máximo histórico: 0,00 euros
+
+
+INFORME GLOBAL DE TODAS LAS CUENTAS
+-----------------------------------
+Saldo total entre todas las cuentas en este instante: 3750,00
+Número de cuentas embargadas en este instante: 2
+Fecha de creación de la cuenta más moderna: 09/01/2020
