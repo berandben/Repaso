@@ -2,7 +2,9 @@ https://riptutorial.com/es/java/example/496/matrices-multidimensionales-y-dentad
 
 https://jarroba.com/busqueda-de-patrones-expresiones-regulares/
 
-https://dzone.com/articles/java-string-format-examples
+https://dzone.com/articles/java-string-format-examples  
+
+https://www.youtube.com/watch?v=izUTCBfLzFs
 
 
 Y si queréis ver como va quedando vuestro array podeís verlo así:
