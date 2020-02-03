@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 transitional//EN""http://www.w3.org/TR/REC-html40/loose.dtd">
+<html lang="es"><!--definición del lenguaje-->
+	<head><!--inicio cabecera-->
+		<meta charset="UTF-8"/>	
+		<meta="description" content="Salón del autómovil de Frankfurt 2019"/>     <!--Descripción de la página para buscadores-->
+		<meta="keywords" content="automóvil, Frankfurt, salón, exposición"/>      <!--Etiquetas para buscadores-->
+		<title>68 Edición del Salón del Automóvil de Frankfurt</title>            <!--titulo de la web, que aparece en la pestaña del navegador-->
+		<link rel="stylesheet" href="style.css"/>                                 <!--enlace a la hoja de estilos-->
+		<script type="text/javascript">                                           <!--script en cabecera para la navegación por el menu, muestra contenido-->
+			function Mostrar(content){
+			    document.getElementById("divinicio").style.display = 'none'
+				document.getElementById("divtransportes").style.display = 'none';
+				document.getElementById("divtarifas").style.display = 'none';
+				document.getElementById("divexposicion").style.display = 'none';
+				document.getElementById("divcontacto").style.display = 'none';
+				document.getElementById(content).style.display = 'block';
+				}
+		</script>				
+	</head><!--fin cabecera-->
+	
+	<body><!--inicio del body, contenido visible de la web-->
+	
+		<div id="cuerpo"><!--Inicio de la capa cuerpo que engloba toda la web-->
+		
+			<div class="logo"><!--Inicio de la capa logo-->
+				<img src="img/logo.jpg" />
+			</div><!--Fin de la capa logo-->
+			
+			<div id="menu"><!--Inicio de la capa menu, lista desordenada-->
+				<ul>
+					<li><a href="#" onclick="return Mostrar('divinicio');">Inicio</a></li> <!--enlace con evento onclik para que se ejecute la función Mostrar del script -->
+					<li><a href="#" onclick="return Mostrar('divtransportes');">Transportes</a></li>
+					<li><a href="#" onclick="return Mostrar('divtarifas');">Tarifas</a></li>
+					<li><a href="#" onclick="return Mostrar('divexposicion');">Exposición</a></li>
+					<li><a href="#" onclick="return Mostrar('divcontacto');">Contacto</a></li>
+				</ul>
+			</div><!--Fin de la capa menu-->
+			
+			<div id="contenido"><!--Inicio de la capa contenido variable segun la opción del menu-->
+			
+				<div id="divinicio"><!--Inicio de la capa inicio, por defecto la que aparece, le pongo id por si tuviera que identificarla-->
+					<div><!--separación del título en su capa-->
+					<h2>Salón del Automóvil de Frankfurt<h2>
+					<h3>Edición 68ª de la muestra de vehículos de esta ciudad Alemana<h3>
+					</div>
+					<p>El Salón del Automóvil de Frankfurt se celebra del 12 al 22 de septiembre en el Centro de Exposiciones Messe Frankfurten 
+					en Fráncfort del Meno, Alemania.<br>
+					Es uno de los salones más importantes en Europa, junto con los de París y Ginebra. 
+					El salón es organizado por la Asociación Alemana de Fabricantes de Automóviles.<br>
+					<br>La primera edición del Salón de Fráncfort se llevó a cabo en 1951. Se celebra únicamente en los años impares,
+					alternándose con el Salón de París. La edición número 67 se desarrolló del 14 al 24 de septiembre de 2017 
+					y registró 810,400 participantes.<br>
+					<br>Ésta edición es la primera donde más coches eléctricos se presentaron, bien por marcas locales como Volkswagen o Porsche,<br>
+					como extranjeras, como Honda, con su compacto el Honda e. Pero fueron varios 100% eléctricos de producción los que se presentaron.
+					</p>	
+					<img src="img/inicio.jpg" /><!--Imagen de inicio-->
+				</div><!--Fin de la capa inicio-->
+				
+				<div id="divtransportes"><!--inicio de la capa transportes-->
+					<div>
+					<h3>¿Cómo llegar al Salón del automóvil?<h3>
+					</div>
+					<p>El Salón del automóvil se celebra en el Centro de Exposiciones Messe Frankfurt, ubicado en:<br>
+					<br>Messe Frankfurt<br>
+					Ludwig-Erhard-Anlage 1<br>
+					60327 Frankfurt a. M., Frankfurt (Alemania) 
+					</p>
+					<figure>
+					<img src="img/mapa.jpg" />
+						<figcaption><!--descripción de la imagen-->
+						Mapa
+						</figcaption>
+					<p> Los desplazamientos se podrán realizar en transportes públicos:<br>
+					<br><b>flixbus.</b><br>
+					<b>flixtrain</b>.<br>
+					</p>
+					<img src="img/bus.jpg" />
+						<figcaption>
+						Bus
+						</figcaption>
+					</figure>
+				</div><!--Fin de la capa transportes-->
+				
+				<div id="divtarifas"><!--inicio de la capa tarifas-->
+					<div>
+					<h3>Las entradas se pueden adquirir en las taquillas del recinto.<h3>
+					</div>
+					<table border="1px" width="300px" cellpadding0"3px"><!--insertar tabla-->
+						<tr><!--filas-->
+							<th>Tipo de entrada</th><!--columnas td, th remarcadas-->
+							<th>Tarifa</th>
+						</tr>						
+						<tr>
+							<th>Individual</th>
+							<td>15€</td>
+						</tr>
+						<tr>
+							<th>Reducida</th>
+							<td>8,50€</td>
+						</tr>
+						<tr>
+							<th>Familiar</th>
+							<td>30€</td>
+						</tr>
+					</table>
+					<img src="img/plano.jpg" />
+				</div><!--Fin de la capa tarifas-->
+				
+				<div id="divexposicion"><!--inicio de la capa exposición-->
+					<div>
+					<h3>Vehículos presentados este año.<h3>
+					</div>
+					<p>Este año la mayoría de los vehículos presentados son electricos.</p>
+					<figure>
+					<img src="img/ioniq.jpg" />
+						<figcaption>
+						Hyundai IONIQ Eléctrico
+						</figcaption>
+					</figure>
+					<figure>
+					<img src="img/Nexo.jpg" />
+						<figcaption>
+						Hyundai Nexo
+						</figcaption>
+					</figure>
+					<figure>
+					<img src="img/env200.jpg" />
+						<figcaption>
+						Nissan E-NV200 EVALIA
+						</figcaption>
+					</figure>
+					<figure>
+					<img src="img/Partner Electric L1.jpg" />
+						<figcaption>
+						Peugeot Partner Electric L1
+						</figcaption>
+					</figure>
+					<figure>
+					<img src="img/Vito Largo Tourer.jpg" />
+						<figcaption>
+						MercedesVito Largo Tourer
+						</figcaption>
+					</figure>
+					<figure>
+					<img src="img/rivianpick-up R1T.jpg" />
+						<figcaption>
+						Rivian pick-up R1T "prototipo"
+						</figure>
+				</div><!--Fin de la capa exposición-->
+				
+				<div id="divcontacto"><!--inicio de la capa contacto-->
+					<form><!--insertar formulario inicio-->
+						<fieldset><!--inicio marco del formulario-->
+						<legend>Contacto: Rellene formulario.</legend><br><!--titulo del formulario-->
+							<label>Nombre:</label><!--lo que se pide en formulario-->
+							<input type="text" size="80" id="formularionombre"><br><br><!--campo de respuesta con identificación y tamaño del campo-->
+							<label>Correo electrónico:</label>
+							<input type="text" size="66" id="formulariocorreo"><br><br>
+							<label>Teléfono:</label>
+							<input type="text"id="formulariotelefono"><br><br><br>
+							<label>Asunto:</label>
+							<p>
+							<input type="text" size="92" id="formularioasunto"></p>
+							<label>Comentario:</label>
+							<p>
+							<textarea id="formulariocomentario" rows="5" cols="70">Deje aquí su comentario</textarea></p>
+							<input type="submit"/><!--botón de enviar sin programar-->
+						</fieldset>	<!--fin marco del formulario-->
+					</form><!--fin formulario-->
+				</div><!--Fin de la capa contacto-->
+			</div><!--fin de la capa contenido -->
+			
+			<footer><!--inicio de la capa pie, se podria hacer con div pero esta es la etiqueta de html5, enlace a la licencia en texto e imagen de la misma-->
+			Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">licencia de Creative Commons Reconocimiento 4.0 Internacional</a>.
+			<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" 
+			src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />
+			</footer><!--fin de la capa pie-->
+	
+		</div><!--Fin de la capa cuerpo-->
+
+	</body>	<!--fin del body-->

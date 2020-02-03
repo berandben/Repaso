@@ -1,0 +1,98 @@
+ /* formato del body, tipo de letra e imagen de fondo*/
+body{                    
+	margin: 0px;
+	background-image: url(img/fondo.jpg);
+	background-size: cover;
+	font-family: verdana;
+}
+/* para que solo se vea el contenido de inicio por defecto */
+#divinicio {
+	display: block;
+}
+/* para que no se vea el resto del contenido*/
+#divtransportes, #divtarifas, #divexposicion, #divcontacto {
+	display: none;
+}	
+/*formato del logo, tiene atributo class*/
+.logo{
+    float:left;
+    margin-bottom: 15px;
+	margin-left: 100px;
+}
+/* formato del menu con color degradado*/
+#menu{
+	margin:50px 100px 20px 420px;
+	padding:10px 30px 90px 30px;
+	background: -moz-radial-gradient(center, ellipse cover, rgba(181,189,200,1) 0%,
+	rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%);
+}
+/* formato del menu lista*/
+#menu li{
+	float:left;
+	display: inline;
+	margin:10px 10px 10px 10px;
+	padding: 10px 10px 10px 10px;
+	border-radius: 10px;
+	width: 100px;
+	background-color: #1b687f;
+	text-align: center;
+}
+/*formato de los enlaces del inicio*/
+#menu a{
+	text-decoration: none;
+	color: black;
+}
+/*efecto de los enlaces del inicio*/
+#menu a:hover{
+	background-color: rgb(220, 220, 220);
+}
+/*formato del comtenido*/
+#contenido{
+	margin: 50px 100px 50px 100px;
+	padding:20px 50px 50px 50px;
+	background: rgb(181,189,200);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(181,189,200,1) 0%,
+	rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%); 
+}
+/* formato de la imagen inicio*/
+#divinicio img{
+	border-radius: 10px;
+	margin-top: 20px;
+}
+/*formato de imagen en exposición*/
+#divexposicion img{
+	padding: 5px;
+	background: black;
+	border-radius:20px;
+	box-shadow: #b4bcc7 5px 5px 10px;
+	-moz-transition:-moz-transform 0.5s ease-in-out 0.1s;
+	}
+/*efecto de imagen en exposición*/
+	#divexposicion figure img:hover{
+	-moz-transform:scale(1.2);
+	}
+/*formato del texto de la imagen en exposición*/	
+#divexposicion figcaption{
+	text-align: center;
+	margin-top: 10px;	
+}
+/*alinear texto en las celdas de la tabla*/
+table td{
+	text-align:center;
+}
+/*`poner la tabla a la derecha y bajar un poco*/
+table{
+	float: right;
+	margin:20px;
+}/*poner la imagen de tarifas más abajo*/
+#divtarifas img{
+	margin-top:20px;
+}
+/*formato del pie*/
+footer{
+	clear: both;
+	margin: 0px 100px 10px 100px;
+	padding:10px 10px 20px 10px;
+	background: -moz-radial-gradient(center, ellipse cover, rgba(181,189,200,1) 0%,
+	rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%);
+}

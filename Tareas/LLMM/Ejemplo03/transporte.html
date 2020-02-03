@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+	<head>
+		<title>68 Frankfurt Auto Messe</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="./style.css" type="text/css" media="all" />
+		<!-- Para mostrar mapa con mapbox.com; no encontré forma de hacerlo de otra manera ;-( -->
+		<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+		<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+
+	</head>
+	<body>
+
+		<div id="cuerpo">
+			<div id="contenedorlogo">
+				<div id="logo">
+				<img src="./img/logo_68_franfurt_1.svg" alt=“68 Frankfurt Auto Messe”>
+				</div>
+			</div>
+			
+			<div id="menu">
+				<ul >
+				<li><a href="./index.html">Starten</a></li>
+				<li><a href="./transporte.html">Transportieren</a></li>
+				<li><a href="./tarifas.html">Tarife</a></li>
+				<li><a href="./exposicion.html">Ausstellung</a></li>
+				<li><a href="./contacto.html">Kontakt</a></li>
+				</ul>
+			</div>
+
+			<div id="ruta">
+				<img src="./img/marcador.png" height="12">&nbsp;<span>68 Frankfurt Auto  Messe > Transportieren</span>
+			</div>
+
+			<a name="inicio"></a>
+			<div id ="mapa"></div>
+			
+
+			<div id="inicio">
+				<h3>68 Frankfurt Auto  Messe</h3>
+			</div>
+
+			<div id="contenido">
+
+				<h2>Transportieren</h2>
+				<div id="articulo">
+					<img src="./img/flixtrain.png" height="50 px"> 
+					<h3>mit dem Zug anreisen</h3>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos fuga facere nobis veniam dignissimos fugiat recusandae perferendis, tenetur deleniti. Aliquid, repellendus dolorem. Iste saepe officia, placeat nobis voluptas cum at!</p>
+					<img src="./img/tren.jpg" width="100%"> 
+				</div>
+				<div id="articulo">
+					<img src="./img/flixbus.png" height="50 px"> 
+					<h3>mit dem Bus anreisen</h3>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos fuga facere nobis veniam dignissimos fugiat recusandae perferendis, tenetur deleniti. Aliquid, repellendus dolorem. Iste saepe officia, placeat nobis voluptas cum at!</p>
+					<img src="./img/bus.jpg" width="100%"> 
+				</div>
+			</div>
+
+		
+
+
+
+		</div>
+		<div id="pie">
+			Licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">&copy; Creative Commons</a> Attribution 4.0 International license
+		</div>
+
+		<!-- Para mostrar mapa con mapbox.com; no encontré forma de hacerlo de otra manera ;-( -->
+		<script>
+		mapboxgl.accessToken = 'pk.eyJ1IjoicGFjb29ydGVnYSIsImEiOiJjazVlNmhzMmYxeW9tM2ttdWsxZmRkczd2In0.7YSs2YvhS4TaEhIH91zr6w';  
+		var map = new mapboxgl.Map({ 
+			container: 'mapa', 
+			style: 'mapbox://styles/mapbox/streets-v9',  
+			center: [12.44, 50.10403],  
+			zoom: 10
+		}); 
+		</script>
+	</body>
+</html>
+
+
+

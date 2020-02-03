@@ -1,0 +1,237 @@
+body {
+    margin: 0;
+    background-color: #eeeeee;
+}
+
+#cuerpo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    color: gray;
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: red;
+}
+
+table, th, td {
+  border: 0px;
+  width: 100%;
+}
+tr:hover {
+  background-color: maroon;
+  color: white;
+}
+
+th {
+  color: white;
+  background-color: maroon;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid
+}
+
+
+/* LOGOTIPO */
+#contenedorlogo {
+    width: 100%;
+    background: linear-gradient(to right, rgb(255, 255, 255,1), rgba(255, 255, 255,0)), url(./img/frankfurt.jpg) right top no-repeat;
+    position: static;
+    background-size: cover;
+}
+
+#logo img {
+    width: 40%;
+    display: inline;	
+}
+
+#ruta {
+    padding: 10px;
+    font: 10pt "Lucida Grande", Lucida, Verdana, sans-serif;
+    color: #8c0222;
+    background-color: #d8d8d8;
+}
+
+/* MENU */
+#menu {
+    overflow: hidden;
+    background-color: #8c0222;
+    font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+#menu ul {
+    margin: 0;
+    padding: 0;
+    padding-inline-start: 0px;
+    list-style-type: none;
+}
+#menu li {
+    float: left;
+}
+#menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 26px;
+    text-decoration: none;
+}
+#menu li a:hover {
+    background-color: #ec2222;
+}
+
+/* PIE DE PAGINA */
+
+#pie {
+    background-color:#8c0222;
+    color: white;
+    padding: 7px 26px;
+    text-align: left;	
+    font-size: 10pt;
+    font-variant: small-caps;
+    position: static;
+    bottom: 0;
+    margin-bottom: 0;
+    clear: both;
+}
+
+
+/* CONTENIDO */
+
+#inicio {
+    float: left;
+    background-size: cover;
+    margin: 14px;
+    padding: 26px;
+    background-color: #8c0222;
+    color: white;
+}
+
+#contenido {
+    margin: 44px;
+    padding: 26px;
+    background-color: white;
+    color: maroon;
+    font-size: 15pt;
+}
+
+#articulo {
+    margin: 10px;
+    padding: 10px;
+    width: 40%;
+    display: inline-block;
+}
+
+
+/* SLIDE DE INICIO */
+.minislide {
+    width:100%; 
+    height: 400px; 
+    overflow: scroll; 
+    position:relative; }
+    
+.minislide img { 
+    position:absolute; 
+    animation:minislide 20s infinite; 
+    opacity:0;
+    width: 100%; 
+    height: auto;
+}
+
+@keyframes minislide {25%{opacity:1;} 40%{opacity:0;}}
+.minislide img:nth-child(1){animation-delay:0s;}
+.minislide img:nth-child(2){animation-delay:5s;}
+.minislide img:nth-child(3){animation-delay:10s;}
+.minislide img:nth-child(4){animation-delay:15s;}
+
+/* INSERCION DE MAPA */
+#mapa { 
+    top:0; 
+    bottom:0; 
+    width:100%; 
+    height: 400px;
+}
+
+/* GALERIA DE FOTOS */
+div.galeria {
+  margin: 5px;
+  border: 0px;
+  width: 350px;
+  display: inline-block;
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
+}
+
+div.galeria:hover {
+  border: 1px solid #8c0222;
+  filter: grayscale(0%);
+
+}
+
+div.galeria img {
+  width: 100%;
+  height: auto;
+}
+
+/* FORMULARIO */
+
+div.formulario {
+  width: 80%;
+  border-radius: 4px;
+  padding: 12px 20px;
+  color: maroon;
+  display: grid;
+  font-size: 14pt;
+}
+div.formulario textarea {
+
+  color: white;
+  background-color: #8c0222;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+div.formulario input[type=text] {
+  color: white;
+  background-color: #8c0222;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+div.formulario input[type=submit] {
+  width: 50%;
+  font-size: 14pt;
+  background-color:  #ec2222;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+div.formulario label {
+  width: 100%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: left;
+}

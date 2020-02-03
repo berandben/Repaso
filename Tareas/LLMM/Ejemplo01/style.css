@@ -1,0 +1,121 @@
+#logo  /*configuración del logo de cabecera*/
+{
+   display:inline-blok;
+   position:left;  
+}
+
+#banner /*configuración de la foto de cabecera*/
+{	
+   background-position: 100px;
+   align:center;
+   width:200px;
+   height:82px;
+}
+
+body  /*configuración del tipo de letra y del color del fondo del cuerpo*/
+{
+    background-color:#fff6f1;
+    font-family:"Helvetica",Arial;
+}
+
+#menu  /*configuración del contenido del menú*/
+{
+    width:960px;              /*configuración para que esté centrado*/
+    margin:0 auto;            /*configuración para que esté centrado*/
+    text-align:center;        /*configuración para que esté centrado*/
+}  
+
+h1  /*configuración del color de los títulos de los menús (naranja)*/
+{
+    color:#e44e2d;
+}
+
+header hgroup h1  /*configuración del estilo del título principal*/
+{
+    border-bottom:solid;
+    padding-bottom:10px;
+    border-width:1px;
+    border-color:#ididid;
+    text-shadow:0px 0px 30px rgba(0,0,0,0.5);
+}
+
+nav ul li  /*configuración de los botones de navegación del menú*/
+{
+    display:inline-block;                   /*configuración para que el listado salga en horizontal*/                 
+    margin-right:20px;                     /*configuración para que el listado salga espaciado a la derecha*/   
+    color:#1d1d1d;                         /*configuración para el color del fondo (negro)*/ 
+    cursor: pointer;                       /*configuración para que salga la manita sobre el botón*/ 
+    padding:5px;
+    transition:all 0.5s linear;
+    -webkit-transition:all 0.5s linear;
+    -moz-transition:all 0.5s linear;
+    -o-transition:all 0.5s linear;
+    
+}
+
+nav ul li:hover  /*configuración de los botones de navegación del menú para bordes redondeados*/
+{
+    background-color:#1d1d1d;
+    color:#e44e2d;
+    border-radius:5px;
+}
+
+nav ul li a  /*configuración de los botones de navegación del menú para que no salgan subrayados*/
+{
+    text-decoration:none;
+}
+
+#contenido   /*Configuración de estilo del cuerpo*/
+{
+    width:800px;
+    height:450px;
+    background-color:#1d1d1d;                  /*configuración para el color del fondo (negro)*/
+    color:#fff;                                /*configuración para el color de las letras (blanco)*/
+    margin:0 auto;                             /*configuración para el centrado*/ 
+    text-align:left;                           /*configuración para que el texto esté alineado a la izquierda*/
+    border-radius:20px;                        /*configuración para que los bordes sean redondeados del fondo*/   
+    padding:20px;                              /*configuración para que se ajuste el texto a los bordes redondeados*/
+    box-shadow:0px 0px 20px rgba(0,0,0,0.5);   /*configuración para el sombreado del fondo (negro)*/  
+    overflow: hidden;                          /*texto que no entre en la ventana se oculta*/
+}
+
+a   /*configuración para el color de los navegadores*/
+{
+    color:e44e2d;
+    font-weight:bold;
+}
+
+label /*botones contacto del menú*/
+{
+    display: block;
+}
+
+#btnSubmit  /*Configuración del formulario de de contacto del menú*/
+{
+    border:none;
+    background-color:#FFF;
+    color:#44e2d;
+    padding: 4px;
+    margin: 0px;
+    cursor: pointer;
+    
+}
+
+.zoom     /*Zoom de la exposición del menú*/
+{
+    transition: transform .5s;
+}
+
+.zoom:hover   /*Zoom de la exposición del menú*/
+{
+
+    transform: scale(1.5);
+}
+
+#pie /*Configuración del pie de página*/
+{
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+    margin-top: 24px;
+}
