@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+
+<html lang="es"> <!-- Defino lenguaje Español-->
+
+    <head> <!-- Elemento <head> información general de metadatos-->
+        <meta charset="UTF-8"/>  <!-- Especificación del código de caracteres-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Definición del área de ventana del contenido visible-->
+        <meta name="description" content="Sal&acute;n del Autom&oacute;vil de Frankfurt"/> <!--Metadatos relativo al contenido de la página y su autor-->
+        <meta name="author" content="Alumno DAW"/>
+
+        <title>Tarifas Sal&oacute;n del Autom&oacute;vil Frankfurt 2019</title>
+
+        <link rel="stylesheet" href="style.css"/>  <!-- Enlace a la hoja de estilos-->
+        <link rel="icon" href="img/logo.png">      <!-- Enlace al icono que aparece en el favicon de la pestaña de la ventana-->
+    </head>
+
+		<!-- Capa cuerpo, el contenido de esta capa es variable en función de la página-->
+		
+    <body>	
+	
+		<!-- Cabecera de página tarifas, inserto un <iframe con los elementos comunes a todas la cabeceras de las otras páginas-->
+		
+        <header id="cabeceratarifas">
+            <div id="cabecera">
+                <iframe src="headercomun.html"></iframe>
+            </div>		
+        </header>
+        
+		<!-- <main> Corresponde al contenido de la página, en este caso una sección y un <article>-->
+        <main>	
+		
+            <section id="contenidotarifas">
+                
+                    <h1> TARIFAS</h1>
+                    
+                    <article id="tarifas">
+
+                       
+					   <!--Inserto tabla para configurar el listado de precios-->
+					   
+                        <div id="tablatarifa">
+                            
+                            <table>
+								<!--Defino con th la "cabecera" de las columnas y en el css le aplicaremos unas propiedades diferentes al resto de datos de la tabla-->
+                                <tr>
+                                    <th>Tipo de Entrada</th>
+                                    <th>Precio</th>
+                                </tr>
+								<!--Insertamos texto en cada celda <td>-->
+                                <tr>
+                                    <td>Entrada Fin de Semana</td>
+                                    <td>15€</td>
+                                </tr>
+                                <tr>
+                                    <td>Entrada un día de la Semana</td>
+                                    <td>13€</td>
+                                </tr>
+                                <tr>
+                                    <td>Entrada Familiar</td>
+                                    <td>35€</td>
+                                </tr>
+                                <tr>
+                                    <td>Entrada un día Estudiantes</td>
+                                    <td>8,50€</td>
+                                </tr>
+                                <tr>
+                                    <td>Entrada un día Reducida</td>
+                                    <td>8,50€</td>
+                                </tr>
+                                <tr>
+                                    <td>Entrada de Tarde</td>
+                                    <td>9€</td>
+                                </tr>
+                                <tr>
+                                    <td>Entrada de Tarde Reducida</td>
+                                    <td>5,50€</td>
+                                </tr>
+                            </table>
+                            
+                            <!--Añado foto decorativa de IAA-->
+                            <figure id="fotoiaa2019">
+                                 <img src="img/iaa2019.jpg">
+                            </figure>
+                            
+                        </div>
+						
+							<!--Añado fotos decorativas de entrada y logos varios--> 
+                        <figure class="fotoentrada">
+                            <img src="img/entrada.jpg">
+                        </figure>
+                        
+                        <figure class="fondoentrada">
+                            <img id="fotoentrada2" src="img/entrada2.png">
+                        </figure>
+                        
+                        <figure class="fotoiaa">
+                            <img src="img/iaa.png">
+                        </figure>
+                        
+                        <!-- Inserto texto-->
+                        <div id="nota">
+                           
+                        <p class="contenidotitular"><b>OBSERVACIONES:</b></p>
+                        
+                        <p class="textocontenido"><b>Las entradas tendrán carácter gratuito para:</b></p>
+                            
+                        <ul class="textocontenido">
+                            <li>Los <b>niños</b> de  hasta <b>seis</b> años de edad inclusive.</li>
+                            <li>Las personas con <b>discapacidad</b> con el <b>sufijo "B"</b> en la tarjeta de identificación (incluida &nbsp &nbsp &nbsp &nbsp una persona acompañante)</li>
+                            <li>Los <b>usuarios de sillas de ruedas</b> (incluida una persona acompañante)</li>
+                        </ul>
+
+                         
+                        <p class="textocontenido">Las entradas del IAA <b>no son válidos</b> para el transporte público.</p>
+                        <p class="textocontenido">Las entradas también están <b>disponibles</b> en las <b>taquillas</b> durante la feria y no es necesario reservarlos. </p>
+                        </div>
+                    
+                    </article>           
+            </section>
+        </main>	
+		
+		<!--Pie de página con el <iframe> correspondiente al pie-->
+		<footer>
+			<iframe  src="footer.html"></iframe>
+		</footer>
+    </body>
+</html>
+

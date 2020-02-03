@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Tarea 2. Programación con HTML,XHTML y CSS</title>
+		
+		<link  type="text/css" rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container clearfix logo">
+				<a href="index.html" class="imagen"><img src="img/logo.png" alt="Salón del Automóvil Frankfurt"></a>
+				<nav class="navigation">
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="transportes.html">Transportes</a></li>
+						<li><a href="tarifas.html">Tarifas</a></li>
+						<li><a href="exposicion.html">Exposición</a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<section id="main" class="contacto">
+			<div class="container clearfix">
+				<div class="columna3">
+					<h2>Contacto</h2><p></p>
+					<dl class="c2">
+                    	<dt><strong>Teléfono:</strong> 177 558 751</dt><p></p>
+						<dt><strong>Emails:</strong></dt>
+							<dd><strong>General:</strong>iaa@vda.de</li>
+							<dd><strong>Prensa:</strong>press@vda.de</li>
+						<p></p>
+                    </ul>
+				</div>
+				<div class="columna4">
+					<h2>Contacto Online</h2><p></p>
+					<p class="c1">Ponte en contacto con nostros a través del siguiente formulario.</p>
+                    <form id="contacto" action="" method="post">
+                    	<div class="clearfix">
+                        	<div class="columna1">
+								<input type="text" name="nombre" id="nombre" placeholder="Nombre" />
+                            </div>
+                            <div class="columna2">
+                            	<input type="email" name="email" id="email" placeholder="Email" />
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                        	<div class="columna1">
+                            	<input type="text" name="telefono" id="telefono" placeholder="Teléfono" />
+                            </div>
+                            <div class="columna2">
+                            	<input type="text" name="asunto" id="asunto" placeholder="Asunto" />
+                            </div>
+                        </div>
+                        <textarea name="comentarios" id="comentarios" placeholder="Escribe aquí tu consulta"></textarea>
+                        <input type="submit" name="enviar" id="enviar" value="ENVIAR" />
+					</form>
+
+				</div>
+			</div>
+		</section>
+
+
+		<footer class="footer">
+			<div class="container"> 
+			<a rel="Licencia" href="https://creativecommons.org/licenses/by-nc-sa/3.0/es/legalcode.es"src="https://creativecommons.org/licenses/by-nc-sa/3.0/es/legalcode.es"> Creative Common</a>
+			  </div>
+		</footer>
+	
+	</body>
+</html>

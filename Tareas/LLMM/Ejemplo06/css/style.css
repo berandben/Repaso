@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css?family=Kumar+One+Outline&display=swap'); /* Tipografía */
+@import url('https://fonts.googleapis.com/css?family=Tomorrow&display=swap');
+
+/*Declaramos el tamaño para todos los posibles casos*/
+*{ 
+	-webkit-box-sizing:border-box; 
+		-moz-box-sizing:border-box;
+			box-sizing:border-box;
+}
+
+/* Estilo del cuerpo */
+body{
+	margin:0;
+	padding:1em;
+	font-family:'Trebuchet MS', sans-serif;
+}
+
+/*Estilo cabecera: método flexbox */
+.flexcontainer{
+	display:flex;
+	padding:1px;
+	border-style:round;
+	justify-content:space-between;
+	align-items:center;	
+}
+
+.flexcontainer a{
+color:black;
+	text-decoration:none;
+}
+
+.logo{
+	display:flex;
+}
+
+.logo img{
+	height:60px; /*Altura debe ser igual a la de flexcontainer;*/
+
+}
+
+.logo h2{
+	font-family: 'Kumar One Outline', cursive;
+}
+
+.menuprincipal{
+	display:flex;
+	justify-content:space-around;
+	list-style:none;
+	flex-wrap:wrap;
+	text-transform:uppercase;
+}
+
+.menuprincipal li{
+	flex-grow: 1;	
+}
+
+.menuprincipal a{
+	color:black;
+	text-decoration:none;
+	padding:1em;
+}
+
+
+.menuprincipal a:hover{
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+
+.menuprincipal a:focus{
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+
+.titulo{
+	text-align:center;
+}
+
+/*Estilo cuerpo-inicio: Método Flexbox*/
+.inicio {
+	display: flex;
+    min-height: calc(100vh - 30vh);
+	justify-content:space-around;
+}
+
+.inicio h2{
+	font-size:0.75em;
+}
+
+.inicio nav img{
+	height:1000px;
+	width:100px;
+	
+}
+
+.inicio h2,h1{
+	text-align:center;
+	font-family:'Tomorrow', sans-serif;
+}
+
+.inicio p{
+	padding:0 4em;
+	text-align:justify;
+}
+
+.inicio img{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-top:5vh;
+	height:80vh;
+}
+
+
+/*Estilo cuerpo-transporte: Métido Felxbox*/
+.transporte{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+}
+
+#train{
+	height:35px;
+}
+
+.transporte img:hover{
+	border:1px solid;
+}
+
+.transporte h3{
+	text-align:center;
+}
+
+.transporte img{
+	height:30px;
+}
+
+.transporte iframe{
+	width: 4000px ;
+	height:250px;
+	border:0;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin: 0 0 0 10px;
+	}
+
+
+/*Estilo cuerpo-tarifa: Método Flexbox*/
+.tarifa {
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	margin:60px 0;
+}
+
+
+
+.tarifa img{
+	height:250px;
+}
+
+
+/*Estilo cuerpo-exposición: Método flexbox*/
+.exposicion {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+
+.exposicion img{
+	height:300px;
+	border-radius: 50%;
+	padding:0;
+	margin:0;
+	padding:2px;
+	
+}
+
+.exposicion img:hover{
+	border-radius:0%;
+	height:325px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
+}	
+
+
+/*Estilo cuerpo-contacto: Método flexbox*/
+
+.contacto{
+	display:flex;
+	justify-content:center;
+}
+
+.contacto div{
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 15px;
+	width:500px;
+	
+}
+
+.contacto form{
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+}
+
+.contacto input{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+textarea{
+  width: 100%;
+  font-family:'Trebuchet MS', sans-serif;
+  height: 100px;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+  overflow:auto;
+}
+/*Vamos a añadir algunos efectos para el formulario*/
+.contacto input:focus{
+	background-color:#C9EAF3;
+}
+
+textarea:focus{
+	background-color:#C9EAF3;
+}
+
+.contacto input[type="submit"]:hover{
+	background-color:#C9EAF3;
+}
+
+/*Pie de página*/
+footer{
+
+	padding:1em 0 1em 0;
+	font-size:10px;
+	margin:30px 0 0 0px;
+	border-bottom:1px solid;
+	border-top:1px solid;	
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Kumar+One+Outline&display=swap'); /* Tipografía */
+@import url('https://fonts.googleapis.com/css?family=Tomorrow&display=swap');
+
+/*Declaramos el tamaño para todos los posibles casos*/
+*{ 
+	-webkit-box-sizing:border-box; 
+		-moz-box-sizing:border-box;
+			box-sizing:border-box;
+}
+
+/* Estilo del cuerpo */
+body{
+	margin:0;
+	padding:1em;
+	font-family:'Trebuchet MS', sans-serif;
+}
+
+/*Estilo cabecera: método flexbox */
+.flexcontainer{
+	display:flex;
+	padding:1px;
+	border-style:round;
+	justify-content:space-between;
+	align-items:center;	
+}
+
+.flexcontainer a{
+color:black;
+	text-decoration:none;
+}
+
+.logo{
+	display:flex;
+}
+
+.logo img{
+	height:60px; /*Altura debe ser igual a la de flexcontainer;*/
+
+}
+
+.logo h2{
+	font-family: 'Kumar One Outline', cursive;
+}
+
+.menuprincipal{
+	display:flex;
+	justify-content:space-around;
+	list-style:none;
+	flex-wrap:wrap;
+	text-transform:uppercase;
+}
+
+.menuprincipal li{
+	flex-grow: 1;	
+}
+
+.menuprincipal a{
+	color:black;
+	text-decoration:none;
+	padding:1em;
+}
+
+
+.menuprincipal a:hover{
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+
+.menuprincipal a:focus{
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+
+.titulo{
+	text-align:center;
+}
+
+/*Estilo cuerpo-inicio: Método Flexbox*/
+.inicio {
+	display: flex;
+    min-height: calc(100vh - 30vh);
+	justify-content:space-around;
+}
+
+.inicio h2{
+	font-size:0.75em;
+}
+
+.inicio nav img{
+	height:1000px;
+	width:100px;
+	
+}
+
+.inicio h2,h1{
+	text-align:center;
+	font-family:'Tomorrow', sans-serif;
+}
+
+.inicio p{
+	padding:0 4em;
+	text-align:justify;
+}
+
+.inicio img{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-top:5vh;
+	height:80vh;
+}
+
+
+/*Estilo cuerpo-transporte: Métido Felxbox*/
+.transporte{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+}
+
+#train{
+	height:35px;
+}
+
+.transporte img:hover{
+	border:1px solid;
+}
+
+.transporte h3{
+	text-align:center;
+}
+
+.transporte img{
+	height:30px;
+}
+
+.transporte iframe{
+	width: 4000px ;
+	height:250px;
+	border:0;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin: 0 0 0 10px;
+	}
+
+
+/*Estilo cuerpo-tarifa: Método Flexbox*/
+.tarifa {
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	margin:60px 0;
+}
+
+.tarifa table{
+	border-collapse: collapse;
+	width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+
+}
+.tarifa img{
+	height:210px;
+}
+.tarifa #titulo{
+	color:black;
+	font-size:20px;
+}
+.pricetab{
+  width:20%;
+  min-width:220px;
+  background:#6B7CFF;
+  float:left;
+  margin-top:.2%;
+  box-shadow:1px 1px 5px rgba(0, 0, 0, .5);
+}
+/*Border redondo*/
+
+.price{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  border:1px solid #526180;
+  margin:5% auto 0 auto;
+  text-align:center;
+}
+
+/*Información*/
+.infos{
+  margin-top:10%;
+}
+
+/* Typo */ 
+.tarifa h1{
+  font-size:18px;
+  color:#fff;
+  text-align:center;
+  line-height:3;
+}
+.tarifa h2{
+  text-align:center;
+  font-size:42px;
+  color:#fff;
+}
+.tarifa sub{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+.tarifa h3{
+  font-size:14px;
+  font-weight:normal;
+  text-align:center;
+  color:#fff;
+  line-height:1;
+}
+.tarifa a{
+  color:#fff;
+  font-size:14px;
+  font-weight:bold;
+  text-decoration:none;
+  line-height:3;
+}
+
+/* Buttons */ 
+.button{
+  width:50%;
+  height:50px;
+  margin:0 auto 0 auto;
+  background:#526180;
+  text-align:center; 
+  cursor:pointer;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.button:hover{
+  width:100%;
+}
+
+
+/*Estilo cuerpo-exposición: Método flexbox*/
+.exposicion {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+
+.exposicion img{
+	height:300px;
+	border-radius: 50%;
+	padding:0;
+	margin:0;
+	padding:2px;
+	
+}
+
+.exposicion img:hover{
+	border-radius:0%;
+	height:325px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
+}	
+
+
+/*Estilo cuerpo-contacto: Método flexbox*/
+
+.contacto{
+	display:flex;
+	justify-content:center;
+}
+
+.contacto div{
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 15px;
+	width:500px;
+	
+}
+
+.contacto form{
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+}
+
+.contacto input{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+textarea{
+  width: 100%;
+  font-family:'Trebuchet MS', sans-serif;
+  height: 100px;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+  overflow:auto;
+}
+/*Vamos a añadir algunos efectos para el formulario*/
+.contacto input:focus{
+	background-color:#C9EAF3;
+}
+
+textarea:focus{
+	background-color:#C9EAF3;
+}
+
+.contacto input[type="submit"]:hover{
+	background-color:#C9EAF3;
+}
+
+/*Pie de página*/
+footer{
+
+	padding:1em 0 1em 0;
+	font-size:10px;
+	margin:30px 0 0 0px;
+	border-bottom:1px solid;
+	border-top:1px solid;	
+}

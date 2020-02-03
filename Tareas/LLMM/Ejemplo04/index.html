@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+
+<html lang="es"> <!-- Defino lenguaje Español-->
+
+    <head> <!-- Elemento <head> información general de metadatos-->
+        <meta charset="UTF-8"/>  <!-- Especificación del código de caracteres-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Definición del área de ventana del contenido visible-->
+        <meta name="description" content="Sal&acute;n del Autom&oacute;vil de Frankfurt"/> <!--Metadatos relativo al contenido de la página y su autor-->
+        <meta name="author" content="Alumno DAW"/>
+
+        <title>Sal&oacute;n del Autom&oacute;vil Frankfurt 2019</title>
+
+        <link rel="stylesheet" href="style.css"/>  <!-- Enlace a la hoja de estilos-->
+        <link rel="icon" href="img/logo.png">      <!-- Enlace al icono que aparece en el favicon de la pestaña de la ventana-->
+    </head>
+	
+			<!-- Capa cuerpo, el contenido de esta capa es variable en función de la página-->
+    <body>  
+		
+		<!-- Cabecera de página principal, inserto un <iframe con los elementos comunes a todas la cabeceras de las otras páginas-->
+		
+		<header id="cabeceraprincipal">
+			<div id="cabecera">
+                <iframe src="headercomun.html"></iframe>
+            </div>
+		
+			<h1>SAL&Oacute;N DEL AUTOM&Oacute;VIL<br/>  FRANKFURT 2019</h1>
+			
+			<div id="infocabecera">
+				<p class="textoinicio">Centro de Exposiciones</p>
+				<p class="messe">MESSE FRANKFURT</P>
+                                <p class="messe">68ª Edici&oacuten</p>
+                                <p class="fecha">Del &nbsp 12/9/2019 &nbsp al &nbsp 22/9/2019</p>
+			</div>
+                      
+                      
+        </header>
+        
+		<!-- <main> Corresponde al contenido de la página, este es variable en función de la página donde estemos, en este caso solo tengo configurada una sección con un <article> -->
+		
+        <main>	
+            <section id="contenidoprincipal">
+
+                    <article>
+
+							<!-- Cabecera del contenido-->
+                        <header>
+                             
+                            <p class="bienvenidos">Bienvenidos a la 68ª Edici&oacute;n del 
+                                Sal&oacute;n del Autom&oacute;vil<br/> de Frankfurt</p>
+                          
+                            
+                                 <h2> LAS MEJORES MARCAS, PROVEEDORES Y LOS &Uacute;LTIMOS SERVICIOS DE MOVILIDAD</h2>
+                        </header>
+						
+						<!-- Inserto texto e imagenes para dar una buena idea de la temática de la página-->
+                        <p class="textocontenido">Bajo el lema <strong>"Conducir mañana"</strong>, el IAA (Sal&oacute;n Internacional
+                            del Autom&oacute;vil) se presenta como una plataforma internacional
+                            para el <b>futuro de la movilidad.</b></p>
+                        <p class="textocontenido">Del <b>12 al 22 de septiembre</b>, los visitantes se encontrar&aacute;n 
+                            con las <strong>mejores marcas, proveedores y  los &uacute;ltimos
+                            servicios de movilidad,</strong> empresas tecnol&oacute;gicas innovadoras y nuevas empresas
+                            de todo el mundo.</p>
+                        <p class="textocontenido">La movilidad nunca ha sido tan fascinante, la locomoci&oacute;n 
+                            nunca es tan emocionante y prometedora como lo es hoy.</p> 
+                        <p class="contenidotitular"><b>Sum&eacute;rgete en la gran exposici&oacute;n IAA en los pasillos 
+                                y en el &aacute;rea al aire libre.</b></p>
+                        <figure>
+                            <img src="img/exposicion630x420.jpg">
+                            <figcaption>Centro de Exposiciones Messe</figcaption>
+                        </figure>
+                        <p class="contenidotitular">Conozca las tecnolog&iacute;as de vanguardia, las soluciones digitales.</p>
+                        <figure>
+                            <img src="img/tecnologia630x420.jpg">
+                            <figcaption>Hydrogen Next BMW</figcaption>
+                        </figure>
+                        <p class="contenidotitular">Salas de exhibici&oacute;n interactivas con el m&aacute;s alto nivel de experiencia </p>
+                        <figure>
+                            <img src="img/interactivo630x420.jpg">
+                            <figcaption>Exposici&oacute;n interactiva</figcaption>
+                        </figure>
+                        <p class="contenidotitular">1.500 Metros&#178; para bicicletas el&eacute;ctricas en el espacio abierto del &Aacute;gora</p>
+                        <figure>
+                            <img src="img/bicicleta630x420.jpg">
+                            <figcaption>&Aacute;gora al aire libre</figcaption>
+                        </figure>
+                        <p class="contenidotitular">AVENTURA 4X4: Curso IAA Offroad para SUV y Jeeps</p>
+                        <figure>
+                            <img src="img/circuito630x420.jpg">
+                            <figcaption>Circuito 4x4</figcaption>
+                        </figure>
+                        <p class="contenidotitular">Conferencias<p>
+                        <figure>
+                            <img src="img/conferencia630x420.jpg">
+                            <figcaption>Conferencias</figcaption>
+                        </figure>
+                        <P class="contenidotitular2">Todo esto y mucho m&aacute;s...</P>
+                        <p class="contenidotitular2">¡Una aventura que nunca olvidar&aacute;s!</p>
+                        <p class="contenidotitular2">Ven y divi&eacutertete.</p>
+                    
+                    </article>
+
+            </section>
+        </main>	
+		
+		<!-- El pie de página está formado por un <iframe> definido en footer.html para poder modificarlo todos los footer de una sola vez-->
+		
+		<footer>
+			<iframe  src="footer.html"></iframe>
+        </footer>
+		
+		
+    </body>
+</html>

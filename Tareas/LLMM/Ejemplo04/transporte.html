@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+
+<html lang="es"> <!-- Defino lenguaje Español-->
+
+    <head> <!-- Elemento <head> información general de metadatos-->
+        <meta charset="UTF-8"/>  <!-- Especificación del código de caracteres-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Definición del área de ventana del contenido visible-->
+        <meta name="description" content="Sal&acute;n del Autom&oacute;vil de Frankfurt"/> <!--Metadatos relativo al contenido de la página y su autor-->
+        <meta name="author" content="Alumno DAW"/>
+
+        <title>Transporte Sal&oacute;n del Autom&oacute;vil Frankfurt 2019</title>
+
+        <link rel="stylesheet" href="style.css"/>  <!-- Enlace a la hoja de estilos-->
+        <link rel="icon" href="img/logo.png">      <!-- Enlace al icono que aparece en el favicon de la pestaña de la ventana-->
+    </head>
+	
+	<!-- Capa cuerpo, el contenido de esta capa es variable en función de la página-->
+    <body>
+		
+        <!-- Cabecera de página transporte, inserto un <iframe con los elementos comunes a todas la cabeceras de las otras páginas-->
+		
+        <header id="cabeceratransporte">
+		
+            <div id="cabecera">
+                <iframe src="headercomun.html"></iframe>
+            </div>
+				
+        </header>
+        
+		<!-- <main> Corresponde al contenido de la página, este es variable en función de la página donde estemos, se divide en 1 sección y 4 <article>-->
+		
+        <main>	
+            <section id="contenidotransporte">
+                
+                    <h1> COMO LLEGAR:</h1>
+					
+                    <!--Primera tramo del contenido, trata de la llegada en coche o autocar-->
+                    <article id="coche">
+									<!--Cabecera del elemento article-->
+                        <header>
+                            <h2>Llegada en coche o autocar</h2> 
+                        </header>
+                       
+					   <!-- Inserto texto-->
+					   
+                        <div id="textocoche">
+                            <p class="textocontenido">El acceso a los <b>espacios de estacionamiento</b> de IAA
+                                está señalizado desde las salidas de la autopista.</p>
+                        
+                        
+                            <p class="textocontenido">La orientación del tráfico para los visitantes, que llegan en 
+                                <b>automóvil</b>, se lleva a cabo <b>dinámicamente por la policía</b> dependiendo de
+                                la utilización de las <b>rutas de acceso y los estacionamientos.</b></p>
+                        
+                            <p class="textocontenido"><b>NO es aconsejable</b> viajar mediante <b>sistemas de 
+                                navegación</b> personales / individuales.</p> 
+                        
+                            
+                        </div>
+						
+                        <!--Inserto imagen coche-->
+						
+                        <figure class="fotocoche">
+                            <img src="img/coche.png">
+                        </figure>
+						
+                        <!--Inserto imagen bus--> 
+						
+                        <figure class="fotobus">
+                            <img id="busazul" src="img/bus.png">
+                        </figure>
+                        
+                        <p class="textocontenido">Siga la señalización de <b>IAA</b> y las instrucciones
+                                de la <b>IAA Ordnungspersonal</b>. Los espacios de estacionamiento para visitantes
+                                 de la IAA se encuentran <b>fuera de la zona medioambiental</b> de Frankfurt </p>
+                    </article>  
+                    
+					 <!--Segundo tramo del contenido, trata de la llegada en flixbus o flixtrain-->
+                     <article id="flix">
+					 
+								<!--Cabecera del elemento article-->
+                        <header>
+                            <h2>Llegada en flixbus o flixtrain</h2> 
+                        </header>
+                       
+					    <!-- Inserto texto-->
+                        <div id="textoflix">
+                            
+                            <p class="textocontenido">Al comprar tu entrada del IAA, obtendras un <b>10% 
+                                    de descuento</b> en la tarifa de tu viaje de ida y vuelta en FlixBus o FlixTrain. </p>
+                        
+                        
+                            <p class="textocontenido">Hay disponibles más de <b>350,000 conexiones</b> entre alrededor
+                                de <b>2.000</b> ciudades en <b>29 países europeos</b>.</p>
+                        
+                            <p class="textocontenido">Con la compra de la <b>entrada</b>, recibirá un <b>código</b> para canjearlo en la
+                            en la reserva de su billete</p> 
+                        
+                        </div>
+						
+						
+                         <div id="cajaflix">
+						 
+							<!--Inserto imagen bus-->
+                            <figure class="flixbus">
+                                <img src="img/flixbus.jpg">
+                            </figure>
+                        
+							<!--Inserto imagen tren-->
+                            <figure class="flixtrain">
+                                <img src="img/flixtrain.jpg">
+                             </figure>
+                         </div>
+                    </article>     
+                    
+					<!--Tercer tramo del contenido, trata de la llegada en transporte público-->
+                    <article id="publico">
+
+                       <header>
+                           <h2>Llegada en transporte público</h2> 
+                       </header>
+                       
+                         <!-- Inserto texto-->
+                        <div class="textocontenido">
+                           <ul>
+                               <li>Desde la estación principal de Frankfurt: 
+                                   <b>líneas de tranvía 16 y 17, líneas S-Bahn S3, &nbsp &nbsp &nbsp S4, S5 y S6</b> hasta la estación Messe.</li>
+                        
+                               <li>Por la línea de <b>metro U4</b> hasta la estación
+                                        <b>Festhalle / Messe.</b>
+                               </li>
+                           </ul>   
+                       </div>  
+                    </article>    
+                    
+                    
+                    <!--Cuarto tramo del contenido, mapa de ubicación-->
+                    <article id="ubicacion">
+
+                       <header>
+                           <h2>Mapa</h2> 
+                       </header>
+                       
+									<!--Inserto iframe con mapa de ubicación-->
+                              <div id="mapa">
+                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.586620677382!2d8.648020316013897!3d50.11274397943018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd0959b1598fff%3A0x9ac35a6829410bd3!2sCongress%20Center%20Messe%20Frankfurt!5e0!3m2!1ses!2ses!4v1573352323240!5m2!1ses!2ses"
+                                         ></iframe>   
+                              </div>
+                          
+                              <div id="fondomapa"></div>
+                       
+                        
+                    </article> 
+    
+            </section>
+        </main>	
+		
+		<!--Pie de página con el <iframe> correspondiente al pie-->
+		<footer>
+			<iframe  src="footer.html"></iframe>
+		</footer>
+		
+    </body>
+</html>

@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+
+<html lang="es"> <!-- Defino lenguaje Español-->
+
+    <head>   <!-- Elemento <head> información general de metadatos-->
+        <meta charset="UTF-8"/>  <!-- Especificación del código de caracteres-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Definición del área de ventana del contenido visible-->
+        <meta name="description" content="Sal&acute;n del Autom&oacute;vil de Frankfurt"/> <!--Metadatos relativo al contenido de la página y su autor-->
+        <meta name="author" content="Alumno DAW"/>
+
+        <title>Exposici&oacute;n Sal&oacute;n del Autom&oacute;vil Frankfurt 2019</title>
+
+        <link rel="stylesheet" href="style.css"/>  <!-- Enlace a la hoja de estilos-->
+        <link rel="icon" href="img/logo.png">      <!-- Enlace al icono que aparece en el favicon de la pestaña de la ventana-->
+    </head>
+
+
+	<!-- Capa cuerpo, el contenido de esta capa es variable en función de la página-->
+	
+    <body>	
+	
+		<!-- Cabecera de página tarifas, inserto un <iframe con los elementos comunes a todas la cabeceras de las otras páginas-->
+		
+        <header id="cabeceraexposicion">
+            <div id="cabecera">
+                <iframe src="headercomun.html"></iframe>
+            </div>	
+        </header>
+        
+		<!-- <main> Corresponde al contenido de la página, en este caso una sección, un <article> y una galería de fotos-->
+		
+        <main>	
+		
+            <section id="contenidotarifas">
+                
+                    <h1>100 A&Ntilde;OS DE EXPOSICI&Oacute;N</h1>
+                    
+                    <article id="coche">
+
+						<!--Inserto texto-->
+                        <div id="introexpo">
+                            
+                             <p>Durante m&aacute;s de 100 a&ntilde;os, el IAA ha garantizado
+                                 espectaculares estrenos de veh&iacute;culos y tendencias tecnol&oacute;gicas sostenibles.</p>
+                             <p>Pero la IAA ha sido durante mucho tiempo más que una simple 
+                                 exhibici&oacute;n de autos: se ha convertido en una plataforma futura l&iacute;der para problemas de movilidad. </p>
+                            
+                        </div>
+                        </article>    
+            
+			<!--Inserto galería-->
+			<h1>Galer&iacutea</h1>
+	            
+				<!-- Para la galería uso una lista no ordenada y le asigno formato desde ccs-->
+                <ul class="galeria">
+                    <li class="aumento"><a href="#img1"><img src="img/img1.jpg"></a></li>
+                    <li class="aumento"><a href="#img2"><img src="img/img2.jpg"></a></li>
+                    <li class="aumento"><a href="#img3"><img src="img/img3.jpg"></a></li>
+                    <li class="aumento"><a href="#img4"><img src="img/img4.jpg"></a></li>
+                    <li class="aumento"><a href="#img5"><img src="img/img5.jpg"></a></li>
+                    <li class="aumento"><a href="#img6"><img src="img/img6.jpg"></a></li>
+                    <li class="aumento"><a href="#img7"><img src="img/img7.jpg"></a></li>
+                    <li class="aumento"><a href="#img8"><img src="img/img8.jpg"></a></li>
+                    <li class="aumento"><a href="#img9"><img src="img/img9.jpg"></a></li>
+                </ul>
+				<!--Inserto las imagenes que se van a abrir al clickear sobre la galería-->
+				
+                <div class="modal" id="img1">
+                    <h3>Mercedes A250</h3>
+                        <div class="imagen">
+                            <a href="#img9">&#60;</a>  <!-- Imagen del símbolo retroceder foto-->
+                            <a href="#img2"><img src="img/img1.jpg"></a>
+                            <a href="#img2">></a>	   <!-- Imagen del símbolo avanzar foto-->
+                        </div>
+                    <a class="cerrar" href="">X</a>
+                </div>
+	
+                <div class="modal" id="img2">
+                    <h3>Mercedes-Maybach S560 Pullman</h3>
+                        <div class="imagen">
+                            <a href="#img1">&#60;</a>
+                            <a href="#img3"><img src="img/img2.jpg"></a>
+                            <a href="#img3">></a>
+                        </div>
+                    <a class="cerrar" href="">X</a>
+                </div>
+	
+                <div class="modal" id="img3">
+                    <h3>Wey-S</h3>
+                        <div class="imagen">
+                            <a href="#img2">&#60;</a>
+                            <a href="#img4"><img src="img/img3.jpg"></a>
+                            <a href="#img4">></a>
+                        </div>
+                    <a class="cerrar" href="">X</a>
+                </div>
+                        
+                <div class="modal" id="img4">
+                    <h3>Mercedes-Benz EQV</h3>
+                        <div class="imagen">
+                            <a href="#img3">&#60;</a>
+                            <a href="#img5"><img src="img/img4.jpg"></a>
+                            <a href="#img5">></a>
+                        </div>
+                    <a class="cerrar" href="">X</a>
+                </div>
+		
+                <div class="modal" id="img5">
+                    <h3>BMW Concept 4</h3>
+                        <div class="imagen">
+                            <a href="#img4">&#60;</a>
+                            <a href="#img6"><img src="img/img5.jpg"></a>
+                            <a href="#img6">></a>
+                        </div>
+                    <a class="cerrar" href="">X</a>
+                </div>
+                        
+                <div class="modal" id="img6">
+                    <h3>Land Rover Defender Commercial</h3>
+                        <div class="imagen">
+                            <a href="#img5">&#60;</a>
+                            <a href="#img7"><img src="img/img6.jpg"></a>
+                            <a href="#img7">></a>
+                        </div>
+                    <a class="cerrar" href="">X</a>
+                </div>
+	
+                <div class="modal" id="img7">
+                    <h3>Audi AI Trail</h3>
+                        <div class="imagen">
+                            <a href="#img6">&#60;</a>
+                            <a href="#img8"><img src="img/img7.jpg"></a>
+                            <a href="#img8">></a>
+                        </div>
+                    <a class="cerrar" href="">X</a>
+                </div>
+	
+                <div class="modal" id="img8">
+                    <h3>Mercedes-Benz Vision EQS</h3>
+                        <div class="imagen">
+                            <a href="#img7">&#60;</a>
+                            <a href="#img9"><img src="img/img8.jpg"></a>
+                            <a href="#img9">></a>
+                        </div>
+                    <a class="cerrar" href="">X</a>
+                </div>
+                        
+                <div class="modal" id="img9">
+                    <h3>Skoda Citigo e iV</h3>
+                        <div class="imagen">
+                            <a href="#img8">&#60;</a>
+                            <a href="#img1"><img src="img/img9.jpg"></a>
+                            <a href="#img1">></a>
+                        </div>
+                    <a class="cerrar" href="">X</a>
+                </div>
+	
+                <!--Inserto texto-->
+                <div id="finexpo">
+                
+                    <p class="bigtext">"En los pr&oacute;ximos diez a&ntilde;os, el mundo del autom&oacute;vil
+                        cambiar&aacute; m&aacute;s que en los &uacute;ltimos 100 a&ntilde;os".</p>
+                    <p class="smalltext""><b>Dr. Wolfgang Porsche</b></p>
+                    <p class="smalltext">Presidente del Consejo de Supervisión
+                        de Porsche AG y Porsche Automobil Holding SE</p>
+                </div>                      
+            </section>
+        </main>	
+		
+		<!-- El pie de página está formado por un <iframe> definido en footer.html para poder modificarlo todos los footer de una sola vez-->
+		<footer>
+			<iframe src="footer.html"></iframe>
+		</footer>
+    </body>
+</html>

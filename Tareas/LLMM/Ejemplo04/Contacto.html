@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+
+<html lang="es"> <!-- Defino lenguaje Español-->
+
+    <head>   <!-- Elemento <head> información general de metadatos-->
+        <meta charset="UTF-8"/>  <!-- Especificación del código de caracteres-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Definición del área de ventana del contenido visible-->
+        <meta name="description" content="Sal&acute;n del Autom&oacute;vil de Frankfurt"/> <!--Metadatos relativo al contenido de la página y su autor-->
+        <meta name="author" content="Alumno DAW"/>
+
+        <title>Contacto Sal&oacute;n del Autom&oacute;vil Frankfurt 2019</title>
+
+        <link rel="stylesheet" href="style.css"/>  <!-- Enlace a la hoja de estilos-->
+        <link rel="icon" href="img/logo.png">      <!-- Enlace al icono que aparece en el favicon de la pestaña de la ventana-->
+    </head>
+	
+	<!-- Capa cuerpo, el contenido de esta capa es variable en función de la página-->
+    <body>
+	
+		<!-- Cabecera de página tarifas, inserto un <iframe con los elementos comunes a todas la cabeceras de las otras páginas-->
+		
+        <header id="cabeceracontacto">
+            <div id="cabecera">
+                <iframe src="headercomun.html"></iframe>
+            </div>
+		</header>
+        
+        
+		<!-- <main> Corresponde al contenido de la página, en este caso una sección, un article y un formulario-->
+		<main>
+            
+           <section id="contenidotarifas">  <!-- Uso la misma estructura que la pagina tarifas-->
+                
+				<h1>CONTACTO</h1>
+                    
+				<article id="coche">
+
+					<div id="introcontacto">
+
+						<p>¿Tienes alguna pregunta, cr&iacute;tica o sugerencia?</p>    
+				  
+						<p>¿Desea ponerse en contacto con el organizador de la IAA?</p>
+			     
+					</div>
+
+
+				 </article>    
+              
+				 <!--Inserto formulario-->
+				 <div id=formulario>
+								
+								<p class="tituloformulario">Cont&aacute;ctenos</p>
+					
+					<!-- Añado la propiedad "placeholder", donde nos indica un texto con el contenido a rellenar y además le añado el atributo "required", para que el formulario no se pueda mandar si no esta relleno el campo-->
+					<form>
+							<label for="nombre">Nombre:</label>
+							<input type="text" id="nombre" placeholder="Escriba su nombre" required>
+							<label for="apellidos">Apellidos:</label>
+							<input type="text" id="apellidos" placeholder="Escriba sus apellidos" required>
+							<label for="email">E-mail:</label>
+							<input type="email" id="correo" placeholder="Escriba su correo electr&oacute;nico" required>
+							<label for="telefono">Tel&eacute;fono:</label>  
+							<input type="text" id="telefono" placeholder="Escriba su tel&eacute;fono">
+							<label for="asunto">Asunto:</label>
+							<input type="text" id="asunto"placeholder="Escriba el asunto" required>
+							<label for="comentarios">Comentarios:</label>
+							<textarea name="comentarios" placeholder="Escriba su mensaje"></textarea>
+							<input type="submit" value="Enviar Datos" id="enviar">
+					 </form>               
+				
+				</div>
+			
+				<!-- Inserto texto,imagenes y correos de personal de contacto-->
+				<div id="formulario2">
+							
+							<p class="smalltext"><b>Jan Heckmann</b><br/>Organizaci&oacute;n general.</p>
+							<p>Tel:+49 30 897842122</p>
+							<p>E-mail:<a href="mailto:stefanie.hennig-senft@vda.de">stefanie.hennig-senft@vda.de</a> </p>
+							<img class="imgcontacto" src="img/Heckmann.jpg">
+							<hr/>
+							
+							<p class="smalltext"><b>Lisa Schlenker</b><br/>Organizaci&oacute;n.</p>
+							<p>Tel:+49 30 897842210</p>
+							<p>E-mail:<a href="mailto:lisa.schlenker@vda.de">lisa.schlenker@vda.de</a> </p>
+							<img class="imgcontacto" src="img/lisa.jpg">
+							<hr/>
+
+							<p class="smalltext"><b>Stefanie Hennig-Senft</b><br/>Prensa.</p>
+							<p>Tel:+49 30 897842200</p>
+							<p>E-mail:<a href="mailto:jan.heckmann@vda.de">jan.heckmann@vda.de</a> </p>
+							<img class="imgcontacto" src="img/Stefanie.jpg">
+							<hr/>
+						 
+							<p class="smalltext"><b>Eckehart Rotter</b><br/>Prensa.</p>
+							<p>Tel:+49 30 897842120</p>
+							<p>E-mail:<a href="mailto:eckehart.rotter@vda.de">eckehart.rotter@vda.de</a> </p>
+							<img class="imgcontacto" src="img/Eckehard.jpg">		
+				</div>
+            </section>
+        </main>	
+			
+			<iframe  src="footer.html"></iframe>
+			
+    </body>
+</html>

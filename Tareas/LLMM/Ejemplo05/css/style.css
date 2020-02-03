@@ -1,0 +1,250 @@
+* {
+	margin:0; padding:0; list-style: none; border: none; outline: none; text-decoration:none;
+	box-sizing: border-box;
+}
+
+/* estilos generales */
+body {
+	color:black; 
+	line-height: 130%; 
+	font-size: 16px; 
+	font-family: Arial, Tahoma, sans-serif;
+	margin:0;
+	}
+	
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.3em; 
+	font-family:  Arial; 
+	color: gray;
+	}
+
+p {
+	margin-bottom: 1.6em;
+	}
+	
+img { 
+	max-width: 100%; 
+	height: auto;
+	}	
+	
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table, th, td{
+	border: 2px solid gray;
+	color:green;
+}
+th, td {
+	padding: 5px;
+	width:25%;
+	text-align:center;
+}
+input, textarea {
+	background-color:#ddd; 
+	padding: 10px; 
+	display:  block;
+	margin-bottom: 1em; 
+	width: 100%; 
+	font-size:14px;
+	}
+	
+input[type="submit"] {
+	display:inline-block; 
+	width:auto; 
+	background-color:gray; 
+	color:black; 
+	font-weight:bold; 
+	padding:15px 35px;}
+	
+input .img2{
+display: block;
+margin: auto;	
+}
+
+
+.clearfix:before, .clearfix:after {
+	content: " "; 
+	display: table
+	}
+.clearfix:after {
+	clear: both;
+	}
+.clearfix {
+	*zoom: 1;
+	}	
+
+/* cabecera */
+.header{
+	background: white;
+	padding: 2rem 0;
+	left: 0;
+	top: 0;
+	right: 0;
+	margin-top: 1rem;
+	}
+
+.logo{
+	display: flex;
+	justify-content: space-between;
+	align-items: center-left;
+}
+
+.navigation ul {
+	margin: 0;
+	padding: 0;
+}
+
+	.navigation ul li {
+		display: inline-block;
+	}
+	
+		.navigation ul li a {
+			color: orange;
+			font-weight: bold;
+			display: block;
+			padding: 0.5rem 1rem;
+			transition: all 0.4s linear;
+
+		}
+			.navigation ul li a:hover {
+				background: gray;
+			}
+
+@media only screen and (max-width: 776px) {
+.navigation{
+	width: 100%;
+	}	
+	
+	.navigation ul li {
+		display: block;
+	}
+	
+		.navigation ul li a {
+			display: block;
+			padding: 0.5rem 0;
+			transition: all 0.4s linear;
+			border-radius: 5px;
+		}
+			.navigation ul li a:hover {
+				background: gray;
+			}
+}
+
+/* pie de página */
+
+.footer {
+	background: gray;
+	padding: 1rem 0;
+	text-align: center;
+	margin-top: 2.5rem;
+	}
+
+
+/* página tarifas */
+
+.columna1{
+	float: left;
+	width:50%;
+	font-style: italic;
+	color: gray;
+	text-align: left;
+	}
+	
+.columna2 {
+	float:right;	
+	width:50%;
+	color: gray;
+	text-align: left;
+	}
+	
+.columna3 {
+	float: left;
+	width: 35%;
+	margin:0 0 0 0;
+}
+
+.columna4 {
+	width:65%;
+	float: left;
+	margin:0 0 0 0;
+}
+
+
+/* página contacto */
+
+#comentarios { margin:0 10px 15px 10px; height:150px;}
+#enviar {margin:10px; margin-bottom:35px;}
+
+.contacto form .columna1{
+	padding:0 10px;
+	}
+	
+.contacto form .columna2{
+	padding:0 10px;
+	}
+	
+	
+.contacto form .columna4 { 
+	padding:35px 0 35px 50px;
+	}
+	
+.c1 {
+	padding: 0 10px;
+	color:gray;
+	font-size: 16px;
+	}
+
+/* página transportes */
+
+.titulo { 
+	font-size: 23px; 
+	color: gray; 
+	text-transform: none; 
+	line-height: 120%; }
+	
+.container{
+	width: 130%;
+	max-width: 850px;
+	margin: 0 auto;
+	}
+
+.mapa {
+    position: relative;
+    padding-bottom: 45%;
+    height: 0;
+    overflow: hidden;
+	}
+	.mapa iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 75%;
+    height: 100%;
+	}
+
+/* página exposición */
+
+
+.fotocoche{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	max-width: 1000px;
+	margin: auto;
+}
+
+.fotoexposicion {
+	width: 300px;
+	height: 200px;
+	margin-bottom: 30px;
+	filter: brightness(50%);
+	transition: transform .2s;
+}
+
+.fotoexposicion:hover {
+	filter: brightness(100%);
+	transform: scale(1.2);
+} 	
