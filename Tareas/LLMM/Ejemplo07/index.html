@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Salón del Automóvil de Frankfurt</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Añadimos la hoja de estilos-->
+</head>
+
+<body>
+    <div id="menu">
+        <!-- Se crea una lista para el menu-->
+        <ul id="navigation">
+            <li><a target="myiframe" href="inicio.html">Inicio</a></li>
+            <li><a target="myiframe" href="transporte.html">Transporte</a></li>
+            <li><a target="myiframe" href="tarifas.html">Tarifas</a></li>
+            <li><a target="myiframe" href="exposicion.html">Exposición</a></li>
+            <li><a target="myiframe" href="contacto.html">Contacto</a></li>
+        </ul>
+        <!-- Dentro de la capa menu se incluye el logo, que quedará a la izquierda (css)-->
+        <div id="logo">
+            <img src="img/logo.jpg" alt="Logo Salón del Automóvil de Frankfurt">
+        </div>
+    </div>
+    <!-- Para que el contenido sea variable vamos a utilizar un iframe que cargue el propio contenido según la opción elegida del menu.
+	Por defecto carga inicio.html-->
+    <div id="content">
+        <iframe name="myiframe" class="myiframe" src="inicio.html"></iframe>
+    </div>
+    <!-- Incluímos el pie de página-->
+    <div id="footer">
+        <p>Este proyecto tiene licencia <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/es/legalcode.es">Creative Commons</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+
+<!--Declaramos el idioma predeterminado del texto de la página-->
+<html lang="es">
+
+    <!--Cabecera -->
+
+    <head>
+
+        <!-- Título de la página-->
+        <title>Salón del Automovil de Frankfurt</title>
+
+        <!-- Meta etiquetas -->
+        <!-- Definimos el juego de caracteres -->
+        <meta charset="UTF-8">
+
+        <!-- Adaptamos el ancho visible según el dispositivo-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Meta Título y Meta Descripción de la página -->
+        <meta name="title" content="Salón del Automóvil de FrankFurt" />
+        <meta name="description" content="Movilidad Eléctrica en la 68ª Edición del Salón del Automóvil de FrankFurt" />
+
+        <!-- Autor -->
+        <meta name="autor" content="Alumno DAW" />
+
+        <!-- Compatibilidad Edge-->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+        <!-- Enlazamos la hoja de estilos -->
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+        <!-- Enlazamos favicon-->
+        <link rel="icon" href="img/favicon.png">
+
+
+        <!--Script que muestra/oculta las secciones-->
+        <script type="text/javascript">
+
+            /*Función que oculta todas las secciones*/
+            function ocultaSecciones() {
+
+                document.getElementById("inicio").style.display = 'none';
+                document.getElementById("transportes").style.display = 'none';
+                document.getElementById("tarifas").style.display = 'none';
+                document.getElementById("exposicion").style.display = 'none';
+                document.getElementById("contacto").style.display = 'none';
+            }
+
+            /*Función que muestra la sección pasada por parámetro*/
+            function muestraSecciones(contenido) {
+
+                ocultaSecciones();
+                document.getElementById(contenido).style.display = 'block';
+            }
+
+        </script>
+
+    </head>
+
+    <!--Capa cuerpo-->
+    <!--Al cargar la página muestra la sección inicio-->
+
+    <body onload="muestraSecciones('inicio');">
+
+        <!--Div que engloba todo el contenido-->
+        <div id="capacuerpo">
+
+            <!--Cabecera que contiene el logo y el menú-->
+            <header>
+
+                <!--Div que engloba toda la cabecera-->
+                <div class="cabecera">
+
+                    <!--Capa logo-->
+                    <div id="capalogo">
+                        <a href="index.html"><img id="logo" src="img/logo.png" alt="logo" title="logo"></a>
+                    </div>
+
+                    <!--Capa menu-->
+                    <div id="capamenu">
+                        <nav>
+                            <ul>
+                                <li><a href="#" onclick="muestraSecciones('inicio');">Inicio</a> </li>
+                                <li><a href="#" onclick="muestraSecciones('transportes');">Transportes</a> </li>
+                                <li><a href="#" onclick="muestraSecciones('tarifas');">Tarifas</a> </li>
+                                <li><a href="#" onclick="muestraSecciones('exposicion');">Exposición</a> </li>
+                                <li><a href="#" onclick="muestraSecciones('contacto');">Contacto</a> </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+
+            </header>
+
+            <!--Capa contenido dinámica-->
+            <div id="capacontenido">
+
+                <!--Sección inicio-->
+                <section id="inicio">
+
+                    <figure>
+                        <img src="img/banner_coche.jpg" alt="Vehículo eléctrico" title="Vehículo eléctrico">
+                    </figure>
+
+                    <!--Título-->
+                    <h1>Salón del Automóvil de FrankFurt 68ª Edición</h1>
+
+                    <!--Primera fila con una columna que ocupa todo el ancho-->
+                    <div class="fila">
+
+                        <!--Primera columna-->
+                        <div class="columna columna1">
+
+                            <p>Un año más, presentamos la Exposición internacional de automóviles IAA, consolidada como la
+                                feria líder mundial de movilidad, transporte y logística. Este año especialmente dedicada a
+                                la sostenibilidad, presentando las últimas novedades en cuanto a vehículos híbridos y eléctricos.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!--Segunda fila con cuatro columnas-->
+                    <div class="fila">
+
+                        <!--Primera columna-->
+                        <div class="columna4">
+
+                            <h3>Localización</h3>
+                            <p> Messe Frankfurt,<br> Ludwig-Erhard-Anlage 1, 60327<br> Fráncfort del Meno, Hesse<br>
+                                Alemania
+                            </p>
+
+                        </div>
+
+                        <!--Segunda columna-->
+                        <div class="columna4">
+
+                            <h3>Enlaces</h3>
+                            <p><a href="https://www.iaa.de/en/cv/" target="_blank">IAA Commercial Vehicles</a></p>
+                            <p><a href="https://www.vda.de/de" target="_blank">Verband der Automobilindustrie </a></p>
+
+                        </div>
+
+                        <!--Tercera columna-->
+                        <div class="columna4">
+
+                            <h3>Fecha</h3>
+                            <p>12 al 22 de septiembre de 2019</p>
+
+                        </div>
+
+                        <!--Cuarta columna-->
+                        <div class="columna4">
+
+                            <h3>Organizador</h3>
+
+                            <p>Verband der Automobilindustrie e.V. (VDA)<br> Behrenstr. 35<br> 10117 Berlín, Alemania<br>
+                                Tel: +49 (0)30 8978420<br> Fax: +49 (0)30 897842604 </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!--Sección transportes-->
+                <section id="transportes">
+
+                    <!--Título-->
+                    <h1>Localización</h1>
+
+                    <!--Primera fila con dos columnas-->
+                    <div class="fila">
+
+                        <!--Primera columna-->
+                        <div class="columna columna2">
+
+                            <figure>
+                                <img id="bus" src="img/bus.jpg" alt="Imagen Bus" title="Como llegar">
+                            </figure>
+
+                            <!--Nueva fila dentro de la primera fila, con dos columnas-->
+                            <div class="fila">
+
+                                <!--Primera columna-->
+                                <div class="columna4">
+
+                                    <h3>Flixbus</h3>
+                                    <p>
+                                        <a href="https://global.flixbus.com/" target="_blank">global.flixbus.com</a>
+                                    </p>
+
+                                </div>
+
+                                <!--Segunda columna-->
+                                <div class="columna4">
+
+                                    <h3>Flixtrain</h3>
+
+                                    <p>
+                                        <a href="https://www.flixtrain.com/" target="_blank">www.flixtrain.com</a>
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <!--Párrafos bajo la filas-->
+                            <div>
+
+                                <p>
+                                    La 68ª Edición del Salón del Automóvil se celebrará en la ciudad de Fráncfort del Meno,
+                                    situada en el estado de Messe de Alemania.
+                                </p>
+                                <p>El acceso al mismo puede realizarse por avión, autobús o tren. Siendo estos últimos los
+                                    medios de transporte más económicos.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <!--Segunda columna-->
+                        <div class="columna columna2">
+
+                            <!--Mapa embebido-->
+                            <iframe id="mapa"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2558.720020273381!2d8.644469885833255!3d50.11024730267448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd0959bb50becd%3A0x5cda116474ac3847!2sLudwig-Erhard-Anlage%201%2C%2060327%20Frankfurt%20am%20Main%2C%20Alemania!5e0!3m2!1ses!2ses!4v1576961967208!5m2!1ses!2ses">
+                            </iframe>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!--Sección tarifas-->
+                <section id="tarifas">
+
+                    <!--Título-->
+                    <h1>Entradas Online</h1>
+
+                    <!--Primera fila con dos columnas-->
+                    <div class="fila">
+
+                        <!--Primera columna-->
+                        <div class="columna columna2">
+
+                            <figure>
+                                <img id="entradas" src="img/entradas.png" alt="Imagen Entradas" title="Entradas">
+                            </figure>
+
+                        </div>
+
+                        <!--Segunda columna-->
+                        <div class="columna columna2">
+
+                            <!--Tabla precios-->
+                            <div id="tabla">
+
+                                <h3>Precios</h3>
+
+                                <table>
+
+                                    <tr>
+                                        <!--Cabecera de la tabla-->
+                                        <th>Tipo</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                    <tr>
+                                        <!--Primera fila-->
+                                        <td>Individual</td>
+                                        <td>15,00 €</td>
+                                    </tr>
+                                    <tr>
+                                        <!--Segunda fila-->
+                                        <td>Reducida</td>
+                                        <td>8,50 €</td>
+                                    </tr>
+                                    <tr>
+                                        <!--Tercera fila-->
+                                        <td>Familiar</td>
+                                        <td>30,00 €</td>
+                                    </tr>
+
+                                </table>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!--Botón comprar-->
+                    <div>
+                        <button class="comprar" onclick="muestraSecciones('contacto');"><span>Comprar</span></button>                    
+                    </div>
+
+                </section>
+
+                <!--Sección Exposición-->
+                <section id="exposicion">
+
+                    <!--Título-->
+                    <h1>Vehículos Expuestos</h1>
+
+                    <!--Primera fila con tres columnas-->
+                    <div class="fila">
+
+                        <!--Primera columna-->
+                        <div class="columna4">
+
+                            <figure class="imggaleria">
+                                <img src="img/jaguar-i-pace.jpg" alt="Jaguar I Pace" title="Jaguar I Pace">
+                                <figcaption>Jaguar I Pace</figcaption>
+                            </figure>
+
+                        </div>
+
+                        <!--Segunda columna-->
+                        <div class="columna4">
+
+                            <figure class="imggaleria">
+                                <img src="img/porsche-taycan.jpg" alt="Porsche Taycan" title="Porsche Taycan">
+                                <figcaption>Porsche Taycan</figcaption>
+                            </figure>
+
+                        </div>
+
+                        <!--Tercera columna-->
+                        <div class="columna4">
+
+                            <figure class="imggaleria">
+                                <img src="img/BMW-i8.jpg" alt="BMW I8" title="BMW I8">
+                                <figcaption>BMW I8</figcaption>
+                            </figure>
+
+                        </div>
+
+                    </div>
+
+                    <!--Segunda fila con tres columnas-->
+                    <div class="fila">
+
+                        <!--Primera columna-->
+                        <div class="columna4">
+
+                            <figure class="imggaleria">
+                                <img src="img/Citroen-C-Zero.jpg" alt="Citroen C Zero" title="Citroen C Zero">
+                                <figcaption>Citroen C Zero</figcaption>
+                            </figure>
+
+                        </div>
+
+                        <!--Segunda columna-->
+                        <div class="columna4">
+
+                            <figure class="imggaleria">
+                                <img src="img/mercedes-benz-evito.jpg" alt="Mercedes Benz EVito"
+                                     title="Mercedes Benz EVito">
+                                <figcaption>Mercedes Benz EVito</figcaption>
+                            </figure>
+
+                        </div>
+
+                        <!--Tercera columna-->
+                        <div class="columna4">
+
+                            <figure class="imggaleria">
+                                <img src="img/rivian.jpg" alt="Rivian" title="Rivian">
+                                <figcaption>Rivian</figcaption>
+                            </figure>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!--Sección Contacto-->
+                <section id="contacto">
+
+                    <!--Título-->
+                    <h1>Contacto</h1>
+
+                    <!--Formulario-->
+                    <form name="formulario" id="formulario" autocomplete="off">
+
+                        <!--Marco general-->
+                        <fieldset>
+
+                            <legend>Escriba su mensaje</legend>
+
+                            <!--Marco nombre y apellidos-->
+                            <fieldset>
+
+                                <label for="nombre">Nombre</label>
+                                <input type="text" name="nombre" id="nombre" placeholder="Su nombre"><br><br>
+
+                                <label for="apellidos">Apellidos</label>
+                                <input type="text" name="apellidos" id="apellidos" placeholder="Sus apellidos">
+
+                            </fieldset>
+
+                            <!--Marco email y teléfono-->
+                            <fieldset>
+
+                                <label for="email">Email</label><input type="email" name="email" id="email" placeholder="sucorreo@correo.com"><br><br>
+                                <label for="telefono">Teléfono</label><input type="tel" name="telefono" id="telefono" placeholder="999111000">
+
+                            </fieldset>
+
+                            <!--Marco asunto y área de texto-->
+                            <fieldset>
+
+                                <label for="asunto">Asunto</label><input type="text" name="asunto" id="asunto" placeholder="Escriba el asunto"><br><br>
+
+                                <textarea id="mensaje" name="mensaje" rows="10" cols="30" placeholder="Escriba su mensaje"></textarea><br><br>
+                                <!--El botón enviar debe llevar type="submit", pero lo dejo como button para que muestre un cuadro de diálogo al pulsarlo-->
+                                <input type="button" value="Enviar" onclick="alert('Gracias por su mensaje');">
+
+                            </fieldset>
+
+                        </fieldset>
+
+                    </form>
+
+                </section>
+
+                <!--Capa pie-->
+                <footer id="capapie">
+
+                    <!--Texto legal-->
+                    <div id="licencia">
+
+                        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+                            <img alt="Licencia de Creative Commons"
+                                 src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"
+                                 title="Esta obra está bajo una Licencia de Creative Commons Reconocimiento-Compartir Igual 4.0 Internacional">
+                        </a>
+                        <p> Esta obra está bajo una Licencia de Creative Commons Reconocimiento-Compartir Igual 4.0 Internacional</p>
+                    </div>
+
+                    <!--Datos alumno-->
+                    <div id="alumno">
+
+                        <address>
+                            F.P.G.S. DAW 2019/2020
+                        </address>
+
+                    </div>
+
+                </footer>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

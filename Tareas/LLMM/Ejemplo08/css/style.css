@@ -1,0 +1,602 @@
+@charset "UTF-8"; /*Codificacion*/
+
+/*Resetea los estilos*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*Fin del reset*/
+
+/*Importamos las fuentes*/
+
+/*Nota:
+Fuentes Google https://fonts.google.com/
+Descarga de Fuentes https://canonicalized.com/local-font/
+*/
+/*Primero las busca en el pc, si no las encuentra las descarga de internet y si tampoco
+es posible las toma de nuestro sitio*/
+
+@font-face {
+    font-family: 'Calistoga';
+    src: local('Calistoga Regular'), local('Calistoga-Regular'), url(https://fonts.gstatic.com/s/calistoga/v1/6NUU8F2OJg6MeR7l4e0fs8wB.woff2) format('woff2'), url('../fuentes/calistoga-v1-latin-regular.woff2');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2'), url('../fuentes/roboto-v20-latin-regular.woff2');
+}
+
+
+/*+++++
+Estilos generales
++++++*/
+
+
+/*Imagen de fondo en el body*/
+body {
+    background-image: url(../img/carretera.jpg);
+    background-size: 100%;
+    background-color: hsl(75, 6%, 14%);
+    background-repeat: no-repeat;
+}
+
+/*Fija el tamaño del cuerpo, lo centra, le aplica una sombra
+y una textura de fondo*/
+#capacuerpo {
+    max-width: 1024px;
+    background-image: url(../img/textura1.png);
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 5px grey;
+}
+
+/*Etiquetas h1*/
+h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 5%;
+    font-family: 'Calistoga', cursive;
+}
+
+/*Etiquetas h3*/
+h3 {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Calistoga', cursive;
+    font-size: 1.2em;
+    font-weight: 100;
+    font-stretch: expanded;
+    font-variant: small-caps;
+    border-bottom: grey 1px solid;
+}
+
+/*Párrafos*/
+p {
+    margin-top: 1%;
+}
+
+/*Párrafos trás etiquetas h3*/
+h3+p {
+    margin-top: 10px;
+}
+
+/*Filas adaptables*/
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Estilo general columnas*/
+.columna {
+    padding: 20px;
+    line-height: 120%;
+    color: grey;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+/*Columna con el ancho de la página*/
+.columna1 {
+    flex: 100%;
+}
+
+/*2 Columnas*/
+.columna2 {
+    flex: 45%;
+    padding: 2%;
+}
+
+/*Columnas estrechas*/
+.columna4 {
+    padding: 15px;
+    flex: 20%;
+    margin: 1px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+
+/*+++++
+Cabecera
+-----*/
+
+
+/*Establece la cabecera como responsive*/
+.cabecera {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Logo responsive*/
+#capalogo {
+    padding: 20px;
+    flex: 30%;
+}
+/*Ancho logo*/
+#capalogo img {
+    width: 300px;
+}
+
+/*Menu responsive*/
+#capamenu {
+    padding: 20px;
+    flex: 60%;
+}
+
+/*Línea bajo el menú*/
+nav {
+    border-bottom: solid black;
+}
+
+/*Menú en línea*/
+ul li {
+    margin-top: 7%;
+    display: inline-block;
+    padding: 2%;
+    font-size: 1.2em;
+}
+
+/*Enlace de menú en reposo*/
+ul li a:link {
+    color: black;
+    text-decoration: none;
+}
+
+/*Enlace de menú visitado*/
+ul li a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/*Ratón sobre enlace de menú*/
+ul li a:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+/*Enlace de menú pulsado*/
+ul li a:active {
+    color: grey;
+}
+
+
+/*+++++
+Página inicio
++++++*/
+
+
+/*Imagen página de inicio*/
+#inicio img {
+    display: block;
+    width: 90%;
+    margin: 1% auto;
+    box-shadow: 5px 5px 10px 5px grey;
+    border-radius: 5px;
+    max-width: 1024px;
+}
+
+/*Etiquetas h3 en página inicio*/
+#inicio h3 {
+    color: black;
+    font-size: 1em;
+}
+
+/*Enlaces en párrafos*/
+#inicio p>a {
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/*Ratón sobre enlaces en párrafos*/
+#inicio p>a:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+
+/*+++++
+Página transportes
++++++*/
+
+
+/*Imagen página transportes*/
+#transportes img {
+    display: block;
+    width: 90%;
+    margin: 5% auto 3% auto;
+    box-shadow: 5px 5px 10px 5px grey;
+    border-radius: 5px;
+}
+
+/*Etiquetas h3 en página transportes*/
+#transportes h3 {
+    color: black;
+    font-size: 1em;
+}
+
+/*Mapa embebido*/
+iframe#mapa {
+    height: 90vh;
+    width: 75%;
+    display: block;
+    margin: 5% auto 10% auto;
+    box-shadow: 5px 5px 10px 5px grey;
+    border-radius: 5px;
+}
+
+/*Enlaces en párrafos*/
+#transportes p>a {
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/*Ratón sobre enlaces en párrafos*/
+#transportes p>a:hover {
+    text-decoration: none;
+    color: grey;
+}
+
+
+/*+++++
+Página tarifas
++++++*/
+
+
+/*Imagen página tarifas*/
+#tarifas img {
+    display: block;
+    width: 70%;
+    margin: 10% auto 3% auto;
+}
+
+/*Etiquetas h3 en la tabla*/
+#tabla h3 {
+    color: black;
+    margin-bottom: 5%;
+}
+
+/*Tabla ancho de celdas automático al 100%*/
+table {
+    table-layout: auto;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 3% auto 3% auto;
+    border: 1px solid black;
+
+}
+
+/*Tabla*/
+#tabla {
+    /*Scroll si se supera el tamaño de la ventana*/
+    overflow-x: auto;
+    margin: 5%;
+    cursor:pointer;
+}
+
+/*Encabezado de tabla*/
+th {
+    border: 1px solid black;
+    padding: 15px;
+    text-align: center;
+    background-color: hsl(354, 78%, 60%);
+    color: white;
+}
+
+/*Columnas*/
+td {
+    border: 1px solid black;
+    text-align: left;
+    padding: 15px;
+}
+
+/*Columna precio*/
+td:first-child+td {
+    text-align: right;
+}
+
+/*Filas
+even=pares odd=impares*/
+tr:nth-child(even) {
+    background-color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: hsl(22, 100%, 89%);
+}
+
+/*Filas ratón encima*/
+tr:hover {
+    background-color: grey;
+    color: black;
+
+}
+
+/*Botón comprar*/
+.comprar {
+    display: block;
+    border-radius: 15px;
+    background-color: green;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 300px;
+    transition: all 0.5s;
+    /*Cambia el cursor*/
+    cursor: pointer;
+    margin: 1% auto 6% auto;
+}
+
+/*Botón comprar ratón encima*/
+.comprar:hover {
+    background-color: white;
+}
+
+/*Transición botón comprar*/
+.comprar span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+/*Añade texto y flecha*/
+.comprar span:after {
+    content: 'Ahora \00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 50px;
+    transition: 0.5s;
+}
+
+/*Desplaza texto con ratón encima*/
+.comprar:hover span {
+    padding-right: 110px;
+    color: green;
+}
+
+/*Visualiza texto añadido con ratón encima*/
+.comprar:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/*+++++
+Página galería
++++++*/
+
+
+/*Imágenes página exposición con efectos en reposo*/
+/*Se aplica una opacidad al 50% y un filtro de escala
+de grises al 100%*/
+.imggaleria img {
+    cursor:pointer;
+    filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%);
+    opacity: 0.5;
+    /* IE8 y anteriores */
+    filter: alpha(opacity=50);
+    width: 300px;
+    height: 200px;
+    margin-bottom: 1%;
+    box-shadow: 5px 5px 10px 5px grey;
+    border-radius: 5px;
+}
+
+/*Imágenes página exposición con efectos ratón encima*/
+/*Se modifica el filtro de escala de grises a 0% y se 
+establece la opacidad al 100%, al mismo tiempo se escala
+la imagen*/
+.imggaleria img:hover {
+    filter: grayscale(0%);
+    /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(0%);
+    opacity: 1;
+    /* IE8 y anteriores */
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+/*Leyenda imágenes página exposición*/
+.imggaleria figcaption {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+/*+++++
+Página contacto
++++++*/
+
+
+/*Centra el formulario*/
+#formulario{
+    display: block;
+    margin:auto;
+    width: 70%;
+}
+
+/*Dibuja marcos en el formulario*/
+fieldset{
+    display:block;
+    border: solid hsl(30, 41%, 20%) 1px; 
+    margin:1%;
+    padding:1%;
+}
+
+/*Elementos input*/
+input[type=text], input[type=tel], input[type=email], textarea {
+    width: 100%;
+    font-size: 1.1em;
+    padding: 3px 5px;
+    margin: 4px 0;
+    box-sizing: border-box; 
+    border-radius: 4px;
+    background-color: hsl(60, 13%, 91%);
+}
+
+/*Elementos input seleccionados*/
+input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea:focus {
+    background-color: lightblue;
+    border: 3px solid #555;
+}
+
+/*Botón enviar*/
+input[type=button] {
+    background-color: #4CAF50;
+    border: solid hsl(30, 41%, 20%) 1px; 
+    color: white;
+    padding: 16px 32px;
+    border-radius: 4px;
+    margin: auto;
+    cursor: pointer;
+    display: block;
+    width: 20%;
+    font-size: 1.2em;
+}
+
+/*Area de texto*/
+textarea {   
+    height: 130px;    
+    font-size: 17px;    
+    background-color: hsl(60, 13%, 91%);  
+    resize: none;
+}
+
+
+/*+++++
+Pie de página
++++++*/
+
+
+/*Pie: Autor y Licencia*/
+#alumno {
+    text-align: center;
+    margin: 0.7% auto;
+    color: grey;
+    padding-bottom: 1%;
+    font-size: 1em;
+}
+
+#licencia img {
+    border-width: 0;
+    display: block;
+    margin: 1% auto;
+}
+
+#licencia p{
+    
+    text-align: center;
+    font-size: 0.7em;
+    color: grey;
+}
+
+
+
+/*Estilos responsive para 
+pantallas de menos de 500px de ancho*/
+
+@media screen and (max-width: 500px) {
+    
+
+    .cabecera {
+        flex-direction: column;
+    }
+
+    ul li {
+        display: block;
+        width: 100%;
+        margin: 1px;
+        text-align: center;
+    }
+    
+    #capacontenido {
+        margin-top: 3%;
+    }
+    
+    #capalogo img {
+        display: block;
+        margin: auto;
+    }
+    
+    .cabecera {
+        margin-bottom: 30px;
+    }
+    
+    #capalogo img {
+        width: 200px;
+    }
+    
+    input[type=button] {
+        
+        width:100%;
+    }
+}
